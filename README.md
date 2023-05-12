@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Kinjal Momaya</h1>
-<h3 align="center">A passionate frontend developer from India</h3>
+<h3 align="center">Full Stack Web Developer with ability to learn and collaborate in rapidly changing environments and compositions. Worked through 1000+ hours of Coding and DSA practice using Javascript, React, NodeJs, Express, MongoDB, and much more.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=kini99&label=Profile%20views&color=0e75b6&style=flat" alt="kini99" /> </p>
 
