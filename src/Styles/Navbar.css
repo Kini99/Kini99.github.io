@@ -1,0 +1,19 @@
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+
+.nav-btn {
+  width: 50px;
+  background-color: #a2a6ff;
+  border: 1px solid #45505b;
+}
+
+.nav-btn:hover {
+  width: 100px;
+  background-color: #333ab9;
+  border: 1px solid #45505b;
+  color: black;
+  font-weight: bold;
+}/*# sourceMappingURL=Navbar.css.map */

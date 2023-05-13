@@ -1,0 +1,507 @@
+@import "./Variables.scss";
+$phoneWidth: 20em;
+$phoneHeight: 40em;
+$borderRadius: 2em;
+
+.home{
+    margin: auto;
+    display: flex;
+    justify-content:center;
+    background-color: #a2a6ff;
+}
+
+.phone {
+    margin:20px;
+    background: #000000;
+    width: $phoneWidth;
+    height: $phoneHeight;
+    border-radius: $borderRadius;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    box-shadow: 0 .5em .5em .5em rgba(0,0,0,.2);
+  
+    .inner-skin {
+      flex-grow: 10;
+      background-color: #eaeaff;
+      border-radius: $borderRadius /2;
+      padding: 1.5em;
+      position: relative;
+  
+      &:before {
+        content: '';
+        position: absolute;
+        width: $phoneWidth / 2;
+        height: 1em;
+        border-radius: 1em;
+        background-color: #000000;
+        top: -.5em;
+        left: $phoneWidth / 4;
+      }
+  
+      &:after {
+        content: '';
+        position: absolute;
+        width: $phoneWidth / 3;
+        height: .5em;
+        border-radius: 1em;
+        background-color: #000000;
+        bottom: .25em;
+        left: ($phoneWidth - ($phoneWidth / 3)) / 2;
+      }
+  
+      .phone-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  
+        .title {
+          font-size: 3em;
+          font-weight: bold;
+          margin-bottom: 0;
+          position: relative;
+  
+        //   &:after {
+        //     position: absolute;
+        //     content: '';
+        //     background-color: #2b44ff;
+        //     height: .15em;
+        //     width: 50%;
+        //     top: 1em;
+        //     left: 0;
+        //   }
+        }
+  
+        .title, .subtitle {
+          color: #000000;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          
+        }
+      }
+  
+      svg {
+        width: 90%;
+      }
+    }
+  }
+
+  .button-rainbow{
+    background-color: rainbowBackground;
+  }
+
+  .bounce {
+    margin-top: 80px;
+    height: 150px;
+    border-radius: 50%;
+    animation-name: bounce;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  .button-rainbow {
+    background-color: rainbowBackground 5s infinite;
+    color: white;
+    border-radius: 15px;
+    padding:10px;
+    font-size: 25px;
+    font-weight: bold;
+    animation: rainbowBackground 5s infinite;
+  }
+  
+  @keyframes rainbowText {
+    0% {
+      color: $redColor;
+    }
+    15% {
+      color: $orangeColor;
+    }
+    30% {
+      color: $yellowColor;
+    }
+    45% {
+      color: $greenColor;
+    }
+    60% {
+      color: $blueColor;
+    }
+    75% {
+      color: $violetColor;
+    }
+    100% {
+      color: $redColor;
+    }
+  }
+  
+  @keyframes rainbowBackground {
+    0% {
+      background: $redColor;
+      border-color: $redColor;
+    }
+    14% {
+      background: $orangeColor;
+      border-color: $orangeColor;
+    }
+    32% {
+      background: $yellowColor;
+      border-color: $yellowColor;
+    }
+    46% {
+      background: $greenColor;
+      border-color: $greenColor;
+    }
+    72% {
+      background: $blueColor;
+      border-color: $blueColor;
+    }
+    85% {
+      background: $violetColor;
+      border-color: $violetColor;
+    }
+    100% {
+      background: $redColor;
+      border-color: $redColor;
+    }
+  }
+
+  .color-red {
+    color: $redColor;
+  }
+  .color-orange {
+    color: $orangeColor;
+  }
+  .color-yellow {
+    color: $yellowColor;
+  }
+  .color-green {
+    color: $greenColor;
+  }
+  .color-blue {
+    color: $blueColor;
+  }
+  .color-violet {
+    color: $violetColor;
+  }
+  .color-indigo {
+    color: $indigoColor;
+  }
+
+  .terminal-container{
+    text-align: left;
+  }
+
+  .terminal-container> h1{
+    margin:40px;
+    margin-top: 0;
+}
+.terminal-container >h3{
+    margin:40px;
+    margin-bottom: 0;
+}
+  
+$recruitmentStatus: $redColor;
+
+.recruitment-notifier {
+  margin:40px;
+//   color:white;
+
+  .title, h1{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+
+  .notification-status {
+    width: .5em;
+    height: .5em;
+    border-radius: 1em;
+    background: $recruitmentStatus;
+    box-shadow: 0 0 .5em $recruitmentStatus;
+    display: inline-block;
+    margin-right: .5em;
+    animation: lightFlash 1s infinite;
+  }
+}
+
+@keyframes lightFlash {
+  49% {
+    background: $recruitmentStatus;
+    box-shadow: 0 0 .5em $recruitmentStatus;
+  }
+  50% {
+    box-shadow: 0 0 0 transparent;
+    background: darken($recruitmentStatus, 30%);
+  }
+  70% {
+    box-shadow: 0 0 0 transparent;
+    background: darken($recruitmentStatus, 30%);
+  }
+  71% {
+    background: $recruitmentStatus;
+    box-shadow: 0 0 .5em $recruitmentStatus;
+  }
+}
+
+
+  .terminal {
+    background: $terminalBackground;
+    border-radius: $terminalBorder;
+    box-shadow: 0 .5em .5em .5em rgba(0,0,0,.2);
+    font-family: monaco,Consolas,Lucida Console,monospace; 
+    width: 40vw;
+    max-width: 40vw;
+    text-align: left;
+    margin:20px;
+  
+    @media only screen and (max-width: 1024px) {
+      width: 80%;
+      max-width: inherit;
+      background: lighten($terminalBackground, 2%);
+      // display: none;
+    }
+  
+    .terminal-header {
+      background: $terminalHeader;
+      border-radius: $terminalBorder $terminalBorder 0 0;
+  
+      .terminal-header-buttons {
+        display: flex;
+        flex-direction: row;
+        padding: .5em 1em;
+  
+        .terminal-button {
+          width: $terminalButtonSize;
+          height: $terminalButtonSize;
+          border-radius: 1em;
+          margin-right: .5em;
+  
+          &.close {
+            background: $terminalClose;
+            border: 1px solid $terminalCloseBorder;
+            position: relative;
+  
+            &:after {
+              content: '';
+              width: $terminalButtonSize / 3;
+              height: $terminalButtonSize / 3;
+              position: absolute;
+              top: $terminalButtonSize / 4;
+              left: $terminalButtonSize / 4;
+              background: $terminalCloseBorder;
+              border-radius: 1em;
+            }
+          }
+  
+          &.minimise {
+            background: $terminalMinimise;
+            border: 1px solid $terminalMinimiseBorder;
+          }
+  
+          &.expand {
+            background: $terminalExpand;
+            border: 1px solid $terminalExpandBorder;
+          }
+        }
+      }
+    }
+  
+    .terminal-body {
+      padding: 1em;
+      color: $terminalText;
+      height: 50vh;
+      min-height: 30em;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+  
+      .has-text-weight-bold {
+        color: lighten($terminalText, 10%);
+      }
+  
+      .text-info {
+        color: $terminalBarAccents;
+      }
+
+      h1{
+        margin-bottom: 0;
+      }
+  
+      a {
+        margin-top: 10px;
+        color: $orangeColor;
+        // text-decoration: underline;
+      }
+      p{
+        margin: 10px;
+      }
+    }
+  
+    .terminal-tmux-bar {
+      background: $terminalBar;
+      border-radius: 0 0 $terminalBorder $terminalBorder;
+      display: flex;
+      flex-direction: row;
+      color: $terminalText;
+      font-size: .8em;
+  
+      p {
+        color: $terminalText;
+      }
+  
+      .screen, .name {
+        background: $terminalBarAccents;
+      }
+  
+      .battery {
+        background: $terminalBackground;
+      }
+  
+      .bar {
+        flex-grow: 10;
+      }
+  
+      .screen, .name, .battery, .bar {
+        padding: .5em;
+      }
+  
+      .screen {
+        border-bottom-left-radius: $terminalBorder;
+        padding-left: 1em;
+      }
+  
+      .name {
+        border-bottom-right-radius: $terminalBorder;
+        padding-right: 1em;
+      }
+    }
+  
+    .terminal-control {
+      color: $terminalText;
+  
+      .terminal-input {
+        color: $terminalBarAccents;
+  
+        .field {
+          .control.has-icons-left .icon {
+            color: $terminalBarAccents;
+            height: auto;
+            width: auto;
+          }
+  
+          .label {
+            color: $terminalText;
+            margin-bottom: 0;
+          }
+  
+          .input {
+            background: transparent;
+            border: none;
+            padding-top: 0;
+            padding-left: 1em;
+            font-family: monaco,Consolas,Lucida Console,monospace; 
+            color: $terminalText;
+            caret-color: transparent;
+  
+            &:hover, &:active, &:focus {
+              outline: none;
+              box-shadow: none;
+            }
+  
+            &:focus {
+              & + .cursor {
+                display: inline-block;
+              }
+            }
+          }
+  
+          .cursor {
+            display: none;
+            background: $terminalText;
+            width: .5em;
+            height: 1.2em;
+            animation: flash 1s infinite;
+            position: absolute;
+            top: .25em;
+            left: 1em;
+          }
+        }
+      }
+    }
+  }
+  
+  @keyframes flash {
+    0% {
+      opacity: 1;
+    }
+  
+    59% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 0;
+    }
+    81% {
+      opacity: 1;
+    }
+  }
+
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .home{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .home{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@keyframes bounce {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-4em); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+  }
+
+@keyframes rainbowBackground {
+    0% {
+      background: $redColor;
+      border-color: $redColor;
+    }
+    14% {
+      background: $orangeColor;
+      border-color: $orangeColor;
+    }
+    32% {
+      background: $yellowColor;
+      border-color: $yellowColor;
+    }
+    46% {
+      background: $greenColor;
+      border-color: $greenColor;
+    }
+    72% {
+      background: $blueColor;
+      border-color: $blueColor;
+    }
+    85% {
+      background: $violetColor;
+      border-color: $violetColor;
+    }
+    100% {
+      background: $redColor;
+      border-color: $redColor;
+    }
+  }
