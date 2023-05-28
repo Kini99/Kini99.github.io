@@ -1,19 +1,11 @@
 .nav-menu {
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  position: fixed;
+  justify-content: space-between;
 }
 
-.nav-btn {
-  width: 50px;
-  background-color: #a2a6ff;
-  border: 1px solid #45505b;
-}
-
-.nav-btn:hover {
-  width: 100px;
-  background-color: #333ab9;
-  border: 1px solid #45505b;
-  color: black;
-  font-weight: bold;
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .nav-menu {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

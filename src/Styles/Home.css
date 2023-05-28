@@ -1,8 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 .home {
   margin: auto;
   display: flex;
   justify-content: center;
-  background-color: #a2a6ff;
+}
+
+#home-details {
+  text-align: left;
+}
+#home-details h1 {
+  text-align: left;
+}
+#home-details h2,
+#home-details h3 {
+  font-weight: normal;
+}
+#home-details button {
+  color: white;
+  border-radius: 15px;
+  border: none;
+  font-size: large;
+  padding: 10px;
+  margin: 10px;
+}
+#home-details .contact {
+  background-color: rgb(254, 95, 85);
+}
+#home-details .about {
+  background-color: rgb(64, 67, 78);
+}
+#home-details .flex {
+  display: flex;
+}
+#home-details > div > div {
+  background-color: rgb(246, 174, 45);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin: 25px 10px;
 }
 
 .phone {
@@ -55,7 +90,8 @@
   margin-bottom: 0;
   position: relative;
 }
-.phone .inner-skin .phone-content .title, .phone .inner-skin .phone-content .subtitle {
+.phone .inner-skin .phone-content .title,
+.phone .inner-skin .phone-content .subtitle {
   color: #000000;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -185,7 +221,8 @@
 .recruitment-notifier {
   margin: 40px;
 }
-.recruitment-notifier .title, .recruitment-notifier h1 {
+.recruitment-notifier .title,
+.recruitment-notifier h1 {
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -310,7 +347,8 @@
 .terminal .terminal-tmux-bar p {
   color: #0D339D;
 }
-.terminal .terminal-tmux-bar .screen, .terminal .terminal-tmux-bar .name {
+.terminal .terminal-tmux-bar .screen,
+.terminal .terminal-tmux-bar .name {
   background: #F45BEE;
 }
 .terminal .terminal-tmux-bar .battery {
@@ -319,7 +357,10 @@
 .terminal .terminal-tmux-bar .bar {
   flex-grow: 10;
 }
-.terminal .terminal-tmux-bar .screen, .terminal .terminal-tmux-bar .name, .terminal .terminal-tmux-bar .battery, .terminal .terminal-tmux-bar .bar {
+.terminal .terminal-tmux-bar .screen,
+.terminal .terminal-tmux-bar .name,
+.terminal .terminal-tmux-bar .battery,
+.terminal .terminal-tmux-bar .bar {
   padding: 0.5em;
 }
 .terminal .terminal-tmux-bar .screen {

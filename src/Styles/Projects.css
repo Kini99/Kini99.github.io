@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+h1,
+p {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-top: 8px;
+  padding-top: 0;
+}
+
+#line {
+  margin: auto;
+  height: 0.5px;
+  width: 45px;
+  background-color: rgb(254, 95, 85);
+}
+
+#projects {
+  margin: auto;
+  width: 80%;
+  margin-top: 20px;
+  background-color: rgb(246, 174, 45);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 0 20px 0;
+  margin: 20px 40px;
+}
+.project-card img {
+  width: 50%;
+  height: 270px;
+}
+.project-card > div {
+  width: 50%;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 0 20px;
+  height: 270px;
+}
+
+.project-tech-stack {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 80px;
+}
+.project-tech-stack p {
+  background-color: rgb(246, 174, 45);
+  padding: 5px 12px;
+  border-radius: 15px;
+}
+
+#project-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 80px;
+}
+#project-button button {
+  background-color: rgb(254, 95, 85);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 12px;
+  font-size: medium;
+  text-decoration: none;
+}
+#project-button button:hover {
+  cursor: pointer;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .project-card {
+    flex-direction: column;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .project-card {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=Projects.css.map */
