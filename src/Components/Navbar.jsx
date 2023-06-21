@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import "../Styles/Navbar.css";
 import { IconButton, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react';
 import { GiHamburgerMenu } from "react-icons/gi";
+import resume from "../Kinjal-Momaya-Resume.pdf";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
 
@@ -24,6 +26,13 @@ const Navbar = () => {
     };
   }, []);
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className='navbar'>
       <h1>KM</h1>
@@ -36,35 +45,35 @@ const Navbar = () => {
   />
   <MenuList>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px" }}>
-    <Link to={"/"} className='nav-link home'>Home</Link>
+    <Link to={"/#"} className='nav-link home'>Home</Link>
     </MenuItem>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}}>
-    <Link to={"/about"} className='nav-link about'>About</Link>
+    <Link to={"/#about"} className='nav-link about'>About</Link>
     </MenuItem>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}}>
-    <Link to={"/skills"} className='nav-link skills'>Skills</Link>
+    <Link to={"/#skills"} className='nav-link skills'>Skills</Link>
     </MenuItem>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}}>
-    <Link to={"/projects"} className='nav-link projects'>Projects</Link>
+    <Link to={"/#projects"} className='nav-link projects'>Projects</Link>
     </MenuItem>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}}>
-    <Link to={"/github"} className='nav-link projects'>Github</Link>
+    <Link to={"/#github"} className='nav-link projects'>Github</Link>
     </MenuItem>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}}>
-    <Link to={"/contact"} className='nav-link contact'>Contact</Link>
+    <Link to={"/#contact"} className='nav-link contact'>Contact</Link>
     </MenuItem>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}}>
     <a href="https://drive.google.com/file/d/1Iv46uAZkxIfhftVBNBiJrc-GbB3d0F2C/view?usp=share_link" target="_blank" className='nav-link resume' id="resume-link-1">Resume</a>
     </MenuItem>
   </MenuList>
 </Menu>:<div id="nav-menu">
-           <button className='nav-btn'><Link to={"/"} className='nav-link home'>Home</Link></button>
-           <button className='nav-btn'><Link to={"/about"} className='nav-link about'>About</Link></button>
-           <button className='nav-btn'><Link to={"/skills"} className='nav-link skills'>Skills</Link></button>
-           <button className='nav-btn'><Link to={"/projects"} className='nav-link projects'>Projects</Link></button>
-           <button className='nav-btn'><Link to={"/github"} className='nav-link projects'>Github</Link></button>
-           <button className='nav-btn'><Link to={"/contact"} className='nav-link contact'>Contact</Link></button>
-           <button className='nav-btn resume'> <a href="https://drive.google.com/file/d/1Iv46uAZkxIfhftVBNBiJrc-GbB3d0F2C/view?usp=share_link" target="_blank" className='nav-link resume' id="resume-link-1">Resume</a></button>
+           <button className='nav-btn'><Link to={"/#"} className='nav-link home'>Home</Link></button>
+           <button className='nav-btn'><Link to={"/#about"} className='nav-link about'>About</Link></button>
+           <button className='nav-btn'><Link to={"/#skills"} className='nav-link skills'>Skills</Link></button>
+           <button className='nav-btn'><Link to={"/#projects"} className='nav-link projects'>Projects</Link></button>
+           <button className='nav-btn'><Link to={"/#github"} className='nav-link projects'>Github</Link></button>
+           <button className='nav-btn'><Link to={"/#contact"} className='nav-link contact'>Contact</Link></button>
+           <button className='nav-btn resume'> <a href="https://drive.google.com/file/d/1Iv46uAZkxIfhftVBNBiJrc-GbB3d0F2C/view?usp=share_link" target="_blank" className='nav-link resume' id="resume-link-1" download={"https://drive.google.com/file/d/1Iv46uAZkxIfhftVBNBiJrc-GbB3d0F2C/view?usp=share_link"}>Resume</a></button>
   </div>
 }
 </div>

@@ -4,11 +4,11 @@ import "../Styles/Skills.css";
 const Skills = () => {
   return (
     <>
-      <h1>My Tech Stack</h1>
+      <h1 id="skills">My Tech Stack</h1>
       <div id='line'></div>
       <p>Technologies I'm skilled in and tools I'm currently using</p>
 
-      <div id="skills">
+      <div id="skills-container">
 
         <div className='skills-card'>
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="image" className='skills-card-img' />

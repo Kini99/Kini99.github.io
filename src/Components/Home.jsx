@@ -8,10 +8,10 @@ const Home = () => {
     <div id="home" className='home'>
       <div id='home-details'>
         <h1>Hey!</h1>
-        <h2>I'm Kinjal Momaya.</h2>
+        <h2 id='user-detail-name'>I'm Kinjal Momaya.</h2>
         {/* <h3>A Full Stack Developer.</h3>
          */}
-         <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Time+New+Roman&color=black&size=25&left=true&vCenter=true&width=400&height=50&lines=Full+Stack+Web+Developer++;MERN+Developer++;Frontend Specialist" className='a-img'/></a>
+         <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Time+New+Roman&color=black&size=25&left=true&vCenter=true&width=400&height=50&lines=Full+Stack+Web+Developer++;MERN+Developer++;" className='a-img' id="user-detail-intro"/></a>
          <br/>
         <Link to={"/contact"}><button className='contact'>Hire Me</button></Link>
         <Link to={"/about"} ><button className='about'>Learn More</button></Link>

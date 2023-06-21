@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 
 export default function Github() {
   return (
-    <div>
+    <div id="github">
          <h1>My Github</h1>
       <div id='line'></div>
       <p>All my work in codes</p>
-      <div id="github">
+      <div id="github-container">
       <h2>Visit my Account <Link to="https://github.com/Kini99" target="_blank"><BiLinkExternal /></Link></h2>
       <h2>Github Statistics</h2>
       <Flex

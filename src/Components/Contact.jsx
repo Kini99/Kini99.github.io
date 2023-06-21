@@ -8,10 +8,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Contact = () => {
   return (
     <>
-      <h1>Contact</h1>
+      <h1 id="contact">Contact</h1>
       <div id='line'></div>
       <p>Reach out to me here</p>
-      <div id="contact" className='contact-links'>
+      <div id="contact-container" className='contact-links'>
         <div id="contact-phone">
           <div id='icon'>
             <img src={PhoneIcon} alt="" />

@@ -16,13 +16,13 @@ p {
   background-color: rgb(254, 95, 85);
 }
 
-#github {
+#github-container {
   margin: auto;
   width: 80%;
   padding-top: 10px;
   align-items: center;
 }
-#github h2 {
+#github-container h2 {
   text-align: center;
   font-family: "Raleway", sans-serif;
   margin-bottom: 5px;
