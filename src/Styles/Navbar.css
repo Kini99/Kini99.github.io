@@ -39,4 +39,21 @@
   width: 80%;
   display: flex;
   justify-content: space-between;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #nav-menu-container {
+    display: none;
+  }
+  #nav-menu-container button {
+    display: none;
+  }
+}
+@media all and (min-width: 0px) and (max-width: 767px) {
+  #nav-menu-container {
+    display: none;
+  }
+  #nav-menu-container button {
+    display: none;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

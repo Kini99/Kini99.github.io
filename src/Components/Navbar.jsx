@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <h1 id="nav-menu">KM</h1>
-{isOpen?<Menu>
+      {isOpen?<Menu>
   <MenuButton
     as={IconButton}
     aria-label='Options'
@@ -60,7 +60,9 @@ const Navbar = () => {
     <a href={resume} target="_blank" className='nav-link resume' id="resume-link-1" download="Kinjal-Momaya-Resume">Resume</a>
     </MenuItem>
   </MenuList>
-</Menu>:<div id="nav-menu-container">
+</Menu>:null}
+
+<div id="nav-menu-container">
            <button className='nav-btn'><Link to={"/#"} className='nav-link home' smooth>Home</Link></button>
            <button className='nav-btn'><Link to={"/#about"} className='nav-link about' smooth>About</Link></button>
            <button className='nav-btn'><Link to={"/#skills1"} className='nav-link skills' smooth>Skills</Link></button>
@@ -69,7 +71,7 @@ const Navbar = () => {
            <button className='nav-btn'><Link to={"/#contact"} className='nav-link contact' smooth>Contact</Link></button>
            <button className='nav-btn resume' onClick={() => window.open("https://drive.google.com/file/d/1Iv46uAZkxIfhftVBNBiJrc-GbB3d0F2C/view?usp=share_link")} id="resume-button-1"> <a href={resume} target="_blank" className='nav-link resume' id="resume-link-1" download="Kinjal-Momaya-Resume.pdf">Resume</a></button>
   </div>
-}
+
 </div>
   )
 }
