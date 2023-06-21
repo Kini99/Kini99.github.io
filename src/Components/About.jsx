@@ -11,7 +11,7 @@ const About = () => {
     <div  id="about-container" className="about-section">
       <div>
     <img src={pic} alt="My Picture did not load i guess..." className='about-img home-img'/>
-    <a href="https://drive.google.com/file/d/1Iv46uAZkxIfhftVBNBiJrc-GbB3d0F2C/view?usp=share_link" target="_blank" className='nav-link resume' id="resume-link-2"><button>RESUME</button></a>
+    <a href="https://drive.google.com/file/d/1Iv46uAZkxIfhftVBNBiJrc-GbB3d0F2C/view?usp=share_link" target="_blank" className='nav-link resume' id="resume-link-2"><button id="resume-button-2">RESUME</button></a>
     </div>
       <div className='about-content' id="user-detail-intro">
       <p>
