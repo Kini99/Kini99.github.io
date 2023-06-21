@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c2061ab.css",
-    "main.js": "/static/js/main.f37a3379.js",
+    "main.css": "/static/css/main.259cff02.css",
+    "main.js": "/static/js/main.d2c5f750.js",
     "static/js/787.f8cd1a75.chunk.js": "/static/js/787.f8cd1a75.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/HomeSweeter.png": "/static/media/HomeSweeter.a79ccc15d09592607014.png",
+    "static/media/FashionPlus.jpg": "/static/media/FashionPlus.85dccc7d76d1fce30f5b.jpg",
+    "static/media/ReserveNow.jpg": "/static/media/ReserveNow.57bbe5228c3d8c0880b2.jpg",
+    "static/media/MagnaMen.jpg": "/static/media/MagnaMen.31040a1a7f0a70bb29a9.jpg",
+    "static/media/kinjal.jpg": "/static/media/kinjal.24e74780443e17fd4b39.jpg",
     "index.html": "/index.html",
-    "main.2c2061ab.css.map": "/static/css/main.2c2061ab.css.map",
-    "main.f37a3379.js.map": "/static/js/main.f37a3379.js.map",
+    "main.259cff02.css.map": "/static/css/main.259cff02.css.map",
+    "main.d2c5f750.js.map": "/static/js/main.d2c5f750.js.map",
     "787.f8cd1a75.chunk.js.map": "/static/js/787.f8cd1a75.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c2061ab.css",
-    "static/js/main.f37a3379.js"
+    "static/css/main.259cff02.css",
+    "static/js/main.d2c5f750.js"
   ]
 }
