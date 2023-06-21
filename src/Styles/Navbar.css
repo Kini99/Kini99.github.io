@@ -12,19 +12,19 @@
   padding: 15px 10px;
   margin: 0;
 }
-.navbar #nav-menu {
+.navbar #nav-menu-container {
   width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.navbar #nav-menu .nav-btn {
+.navbar #nav-menu-container .nav-btn {
   font-size: large;
   border: none;
   background-color: white;
   color: black;
 }
-.navbar #nav-menu .resume {
+.navbar #nav-menu-container .resume {
   background-color: #FE5F55;
   border-radius: 8px;
   padding: 0 5px;

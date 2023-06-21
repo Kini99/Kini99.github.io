@@ -29,8 +29,8 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <h1>KM</h1>
-{isOpen?<Menu id="nav-menu">
+      <h1 id="nav-menu">KM</h1>
+{isOpen?<Menu>
   <MenuButton
     as={IconButton}
     aria-label='Options'
@@ -39,34 +39,34 @@ const Navbar = () => {
   />
   <MenuList>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px" }}>
-    <Link to={"/#"} className='nav-link home'>Home</Link>
+    <Link to={"/#"} className='nav-link home' smooth>Home</Link>
     </MenuItem>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}}>
-    <Link to={"/#about"} className='nav-link about'>About</Link>
+    <Link to={"/#about"} className='nav-link about' smooth>About</Link>
     </MenuItem>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}}>
-    <Link to={"/#skills"} className='nav-link skills'>Skills</Link>
+    <Link to={"/#skills"} className='nav-link skills' smooth>Skills</Link>
     </MenuItem>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}}>
-    <Link to={"/#projects"} className='nav-link projects'>Projects</Link>
+    <Link to={"/#projects"} className='nav-link projects' smooth>Projects</Link>
     </MenuItem>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}}>
-    <Link to={"/#github"} className='nav-link projects'>Github</Link>
+    <Link to={"/#github"} className='nav-link github' smooth>Github</Link>
     </MenuItem>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}}>
-    <Link to={"/#contact"} className='nav-link contact'>Contact</Link>
+    <Link to={"/#contact"} className='nav-link contact' smooth>Contact</Link>
     </MenuItem>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}} onClick={() => window.open("https://drive.google.com/file/d/1Iv46uAZkxIfhftVBNBiJrc-GbB3d0F2C/view?usp=share_link")}>
     <a href={resume} target="_blank" className='nav-link resume' id="resume-link-1" download="Kinjal-Momaya-Resume">Resume</a>
     </MenuItem>
   </MenuList>
-</Menu>:<div id="nav-menu">
-           <button className='nav-btn'><Link to={"/#"} className='nav-link home'>Home</Link></button>
-           <button className='nav-btn'><Link to={"/#about"} className='nav-link about'>About</Link></button>
-           <button className='nav-btn'><Link to={"/#skills"} className='nav-link skills'>Skills</Link></button>
-           <button className='nav-btn'><Link to={"/#projects"} className='nav-link projects'>Projects</Link></button>
-           <button className='nav-btn'><Link to={"/#github"} className='nav-link projects'>Github</Link></button>
-           <button className='nav-btn'><Link to={"/#contact"} className='nav-link contact'>Contact</Link></button>
+</Menu>:<div id="nav-menu-container">
+           <button className='nav-btn'><Link to={"/#"} className='nav-link home' smooth>Home</Link></button>
+           <button className='nav-btn'><Link to={"/#about"} className='nav-link about' smooth>About</Link></button>
+           <button className='nav-btn'><Link to={"/#skills"} className='nav-link skills' smooth>Skills</Link></button>
+           <button className='nav-btn'><Link to={"/#projects"} className='nav-link projects' smooth>Projects</Link></button>
+           <button className='nav-btn'><Link to={"/#github"} className='nav-link github' smooth>Github</Link></button>
+           <button className='nav-btn'><Link to={"/#contact"} className='nav-link contact' smooth>Contact</Link></button>
            <button className='nav-btn resume' onClick={() => window.open("https://drive.google.com/file/d/1Iv46uAZkxIfhftVBNBiJrc-GbB3d0F2C/view?usp=share_link")}> <a href={resume} target="_blank" className='nav-link resume' id="resume-link-1" download="Kinjal-Momaya-Resume.pdf">Resume</a></button>
   </div>
 }

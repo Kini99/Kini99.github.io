@@ -3,12 +3,10 @@ import "../Styles/Skills.css";
 
 const Skills = () => {
   return (
-    <>
+    <div id="skills-container">
       <h1 id="skills">My Tech Stack</h1>
       <div id='line'></div>
       <p>Technologies I'm skilled in and tools I'm currently using</p>
-
-      <div id="skills-container">
 
         <div className='skills-card'>
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="image" className='skills-card-img' />
@@ -59,8 +57,8 @@ const Skills = () => {
           <img src="https://www.mongodb.com/" alt="image" className='skills-card-img' />
           <h2 className='skills-card-name'>MongoDB</h2>
         </div>
-      </div>
-    </>
+      
+    </div>
   )
 }
 
