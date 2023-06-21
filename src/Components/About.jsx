@@ -4,8 +4,8 @@ import pic from "../Images/kinjal.jpg"
 
 const About = () => {
   return (
-    <>
-    <h1 className='about-h1' title='About Me' id="about">About </h1>
+    <div id="about">
+    <h1 className='about-h1' title='About Me' id="about.about.section" >About </h1>
     <div id='line'></div>
     <p>Know more about my professional and personal interests</p>
     <div  id="about-container" className="about-section">
@@ -16,9 +16,10 @@ const About = () => {
       <div className='about-content' id="user-detail-intro">
       <p>
       Greetings! I'm Kinjal Momaya, a full stack web developer based in India. I have embarked on an exciting journey to pursue my passion for web development. Alongside my expertise in web technologies, I am eager to expand my skill set to include Android and iOS development. When I'm not immersed in coding, you'll find me indulging in painting or cooking delicious meals. With a focus on continuous learning and a knack for crafting exceptional digital experiences, I am dedicated to delivering innovative solutions that meet and exceed client expectations. Looking forward to collaborating with you and bringing your ideas to life!</p>
+      <p id="transparent">HTML CSS Javascript React Nodejs Express MongoDB</p>
     </div>
     </div>
-    </>
+    </div>
   )
 }
 

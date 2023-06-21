@@ -54,6 +54,11 @@ p {
     }
 }
 
+#transparent{
+    color: transparent;
+    font-size: 0.1px;
+}
+
 @media all and (min-width: 768px) and (max-width: 1024px) {
     .about-section{
         flex-direction: column;
