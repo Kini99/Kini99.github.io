@@ -56,7 +56,7 @@ p {
     justify-content: center;
   }
 }
-@media all and (min-width: 320px) and (max-width: 767px) {
+@media all and (min-width: 0px) and (max-width: 767px) {
   .about-section {
     flex-direction: column;
     justify-content: center;

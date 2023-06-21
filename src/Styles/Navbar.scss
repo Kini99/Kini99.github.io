@@ -1,15 +1,55 @@
+.navbar{
+  width:60%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    background-color: #A2A6FF;
+    border-radius: 50%;
+    padding:15px 10px;
+    margin:0;
+  }
+  #nav-menu{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+  .nav-btn{
+    font-size: large;
+    border: none;
+    background-color: white;
+    color: black;
+  }
+  .resume{
+    background-color: #FE5F55;
+    border-radius: 8px;
+    padding: 0 5px;
+    height: 50%;
+    color: white;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+}
+
 .nav-menu{
     width: 80%;
     display: flex;
     justify-content: space-between;
 }
 
-@media all and (min-width: 768px) and (max-width: 1024px) {
-  
-}
+// @media all and (min-width: 768px) and (max-width: 1024px) {
+//   .nav-menu{
+//     flex-direction: column;
+//    }
+// }
 
-@media all and (min-width: 320px) and (max-width: 767px) {
-    .nav-menu{
-        flex-direction: column;
-       }
-}
+// @media all and (min-width: 320px) and (max-width: 767px) {
+//     .nav-menu{
+//         flex-direction: column;
+//        }
+// }
+

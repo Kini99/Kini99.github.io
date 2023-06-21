@@ -4,6 +4,7 @@ import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
+import Github from './Github';
 
 const MainRoutes = () => {
   return (
@@ -12,6 +13,7 @@ const MainRoutes = () => {
              <Route path="/about" Component={About} />
              <Route path="/skills" Component={Skills} />
              <Route path="/projects" Component={Projects} />
+             <Route path="/github" Component={Github} />
              <Route path="/contact" Component={Contact} />
            </Routes> 
   )

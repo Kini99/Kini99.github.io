@@ -44,7 +44,7 @@ const Contact = () => {
             Kinjal Momaya
           </div>
         </div>
-      <p>Made with ❤️ by Kinjal Momaya</p>
+      <p>Thankyou for visiting 💛 - Kinjal Momaya</p>
       </div>
     </>
 

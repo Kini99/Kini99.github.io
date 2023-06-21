@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+h1, p {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-top: 8px;
+}
+
+#line {
+  margin: auto;
+  height: 1.5px;
+  width: 45px;
+  background-color: rgb(254, 95, 85);
+}
+
+#github {
+  margin: auto;
+  width: 80%;
+  padding-top: 10px;
+  align-items: center;
+}
+#github h2 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=Github.css.map */

@@ -3,6 +3,7 @@ import "../Styles/Projects.css";
 import ReserveNow from "../Images/ReserveNow.jpg";
 import MagnaMen from "../Images/MagnaMen.jpg";
 import FashionPlus from "../Images/FashionPlus.jpg";
+import HomeSweeter from "../Images/HomeSweeter.png";
 
 const Projects = () => {
   return (
@@ -12,7 +13,29 @@ const Projects = () => {
         <div id='line'></div>
         <p>A showcase of my best projects</p>
 
-        {/* Project Card 1 */}
+        <div className='project-card'>
+          <img src={HomeSweeter} alt="image" />
+          <div>
+            <h1 className='project-title'>Home Sweeter</h1>
+            <div className='project-tech-stack'>
+              <p>React</p>
+              <p>Javascript</p>
+              <p>CSS</p>
+              <p>Chakra UI</p>
+            </div>
+            <div className='project-tech-stack'>
+              <p>Node.js</p>
+              <p>Express</p>
+              <p>MongoDB</p>
+            </div>
+            <p className='project-description'>An e-commerce platform which acts as a one stop solution for users to buy, sell or rent properties.</p>
+            <div id='project-button'>
+            <a href='https://github.com/Kini99/nippy-flavor-9468' target='blank'><button className='project-github-link'>Code Base</button></a>
+            <a href='https://homesweeter.netlify.app/' target='blank'><button className='project-deployed-link'>Live Demo</button></a>
+            </div>
+          </div>
+        </div>
+
         <div className='project-card'>
           <img src={ReserveNow} alt="image" />
           <div>
