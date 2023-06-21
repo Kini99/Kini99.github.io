@@ -39,37 +39,37 @@ const Navbar = () => {
   />
   <MenuList>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px" }}>
-    <Link to={"/#"} className='nav-link home' smooth>Home</Link>
+    <Link to={"/#"} className='nav-link home' smooth  style={{textDecoration:"none", color:"black"}}>Home</Link>
     </MenuItem>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}}>
-    <Link to={"/#about"} className='nav-link about' smooth>About</Link>
+    <Link to={"/#about"} className='nav-link about' smooth  style={{textDecoration:"none", color:"black"}}>About</Link>
     </MenuItem>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}}>
-    <Link to={"/#skills1"} className='nav-link skills' smooth>Skills</Link>
+    <Link to={"/#skills1"} className='nav-link skills' smooth  style={{textDecoration:"none", color:"black"}}>Skills</Link>
     </MenuItem>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}}>
-    <Link to={"/#projects"} className='nav-link projects' smooth>Projects</Link>
+    <Link to={"/#projects"} className='nav-link projects' smooth  style={{textDecoration:"none", color:"black"}}>Projects</Link>
     </MenuItem>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}}>
-    <Link to={"/#github"} className='nav-link github' smooth>Github</Link>
+    <Link to={"/#github"} className='nav-link github' smooth  style={{textDecoration:"none", color:"black"}}>Github</Link>
     </MenuItem>
     <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}}>
-    <Link to={"/#contact"} className='nav-link contact' smooth>Contact</Link>
+    <Link to={"/#contact"} className='nav-link contact' smooth  style={{textDecoration:"none", color:"black"}}>Contact</Link>
     </MenuItem>
-    <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}} onClick={() => window.open("https://drive.google.com/file/d/1Iv46uAZkxIfhftVBNBiJrc-GbB3d0F2C/view?usp=share_link")} id="resume-button-1">
-    <a href={resume} target="_blank" className='nav-link resume' id="resume-link-1" download="Kinjal-Momaya-Resume">Resume</a>
+    <MenuItem style={{fontSize: "large",border: "none", backgroundColor: "white",color: "black",margin:"10px"}} onClick={() => window.open("https://drive.google.com/file/d/1Iv46uAZkxIfhftVBNBiJrc-GbB3d0F2C/view?usp=share_link")} id="resume-button-1" >
+    <a href={resume} target="_blank" className='nav-link resume' id="resume-link-1" download="Kinjal-Momaya-Resume" style={{textDecoration:"none", color:"black"}}>Resume</a>
     </MenuItem>
   </MenuList>
 </Menu>:null}
 
 <div id="nav-menu-container">
-           <button className='nav-btn'><Link to={"/#"} className='nav-link home' smooth>Home</Link></button>
-           <button className='nav-btn'><Link to={"/#about"} className='nav-link about' smooth>About</Link></button>
-           <button className='nav-btn'><Link to={"/#skills1"} className='nav-link skills' smooth>Skills</Link></button>
-           <button className='nav-btn'><Link to={"/#projects"} className='nav-link projects' smooth>Projects</Link></button>
-           <button className='nav-btn'><Link to={"/#github"} className='nav-link github' smooth>Github</Link></button>
-           <button className='nav-btn'><Link to={"/#contact"} className='nav-link contact' smooth>Contact</Link></button>
-           <button className='nav-btn resume' onClick={() => window.open("https://drive.google.com/file/d/1Iv46uAZkxIfhftVBNBiJrc-GbB3d0F2C/view?usp=share_link")} id="resume-button-1"> <a href={resume} target="_blank" className='nav-link resume' id="resume-link-1" download="Kinjal-Momaya-Resume.pdf">Resume</a></button>
+           <button className='nav-btn'><Link to={"/#"} className='nav-link home' smooth style={{textDecoration:"none", color:"black"}}>Home</Link></button>
+           <button className='nav-btn'><Link to={"/#about"} className='nav-link about' smooth  style={{textDecoration:"none", color:"black"}}>About</Link></button>
+           <button className='nav-btn'><Link to={"/#skills1"} className='nav-link skills' smooth  style={{textDecoration:"none", color:"black"}}>Skills</Link></button>
+           <button className='nav-btn'><Link to={"/#projects"} className='nav-link projects' smooth  style={{textDecoration:"none", color:"black"}}>Projects</Link></button>
+           <button className='nav-btn'><Link to={"/#github"} className='nav-link github' smooth  style={{textDecoration:"none", color:"black"}}>Github</Link></button>
+           <button className='nav-btn'><Link to={"/#contact"} className='nav-link contact' smooth  style={{textDecoration:"none", color:"black"}}>Contact</Link></button>
+           <button className='nav-btn resume' onClick={() => window.open("https://drive.google.com/file/d/1Iv46uAZkxIfhftVBNBiJrc-GbB3d0F2C/view?usp=share_link")} id="resume-button-1" > <a href={resume} target="_blank" className='nav-link resume' id="resume-link-1" download="Kinjal-Momaya-Resume.pdf" style={{textDecoration:"none", color:"white"}}>Resume</a></button>
   </div>
 
 </div>

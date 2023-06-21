@@ -1,10 +1,14 @@
 .navbar{
+  position: sticky;
+  top: 0;
   width:60%;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  z-index: 1; 
+  background-color: white;
   h1 {
     background-color: #A2A6FF;
     border-radius: 50%;

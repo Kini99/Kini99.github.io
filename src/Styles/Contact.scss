@@ -28,15 +28,29 @@ p {
     justify-content: center;
     > div{
         display: flex;
-        margin: 5px 0 5px 600px;
+        margin: auto;
         border-radius: 5px;
         width:300px;
-        border:1px solid black
+    }
+    #contact-linkedin{
+        display: flex;
+        margin: auto;
+        border-radius: 5px;
+        width:300px;
+        text-decoration: none;
+    }
+    #contact-github{
+        display: flex;
+        margin: auto;
+        border-radius: 5px;
+        width:300px;
+        text-decoration: none;
     }
     #icon{
         background-color: rgba(162, 166, 255, 1);
         width:15%;
         border-radius: 5px;
+        margin: 1px;
     }
     #details{
         background-color: rgba(254, 95, 85, 1);
@@ -44,5 +58,6 @@ p {
         color: white;
         padding: 5px;
         border-radius: 5px;
+        margin: 1px;
     }
 }

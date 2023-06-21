@@ -27,15 +27,29 @@ p {
 }
 .contact-links > div {
   display: flex;
-  margin: 5px 0 5px 600px;
+  margin: auto;
   border-radius: 5px;
   width: 300px;
-  border: 1px solid black;
+}
+.contact-links #contact-linkedin {
+  display: flex;
+  margin: auto;
+  border-radius: 5px;
+  width: 300px;
+  text-decoration: none;
+}
+.contact-links #contact-github {
+  display: flex;
+  margin: auto;
+  border-radius: 5px;
+  width: 300px;
+  text-decoration: none;
 }
 .contact-links #icon {
   background-color: rgb(162, 166, 255);
   width: 15%;
   border-radius: 5px;
+  margin: 1px;
 }
 .contact-links #details {
   background-color: rgb(254, 95, 85);
@@ -43,4 +57,5 @@ p {
   color: white;
   padding: 5px;
   border-radius: 5px;
+  margin: 1px;
 }/*# sourceMappingURL=Contact.css.map */
