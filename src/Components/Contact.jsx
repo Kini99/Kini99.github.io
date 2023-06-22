@@ -50,7 +50,7 @@ const Contact = () => {
           </div>
           </Link>
         {/* </div> */}
-      <p>Thankyou for visiting 💛 - Kinjal Momaya</p>
+      <p id="msg">Thankyou for visiting 💛 - Kinjal Momaya</p>
       </div>
     </>
 

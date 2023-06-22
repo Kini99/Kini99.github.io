@@ -14,11 +14,13 @@ const Projects = () => {
         <p>A showcase of my best projects</p>
 
         <div className='project-card'>
+          <div className='img-container'>
           <img src={HomeSweeter} alt="image" />
-          <div>
+          </div>
+          <div className='detail-container'>
             <h1 className='project-title'>Home Sweeter</h1>
             <div className='project-tech-stack'>
-              <p>React</p>
+            <p>React</p>
               <p>Javascript</p>
               <p>CSS</p>
               <p>Chakra UI</p>
@@ -37,8 +39,10 @@ const Projects = () => {
         </div>
 
         <div className='project-card'>
+        <div className='img-container'>
           <img src={ReserveNow} alt="image" />
-          <div>
+          </div>
+          <div className='detail-container'>
             <h1 className='project-title'>Reserve Now</h1>
             <div className='project-tech-stack'>
               <p>React</p>
@@ -55,8 +59,10 @@ const Projects = () => {
         </div>
 
         <div className='project-card'>
+        <div className='img-container'>
           <img src={MagnaMen} alt="image" />
-          <div>
+          </div>
+          <div className='detail-container'>
             <h1 className='project-title'>Magna Men</h1>
             <div className='project-tech-stack'>
               <p>HTML</p>
@@ -72,8 +78,10 @@ const Projects = () => {
         </div>
 
         <div className='project-card'>
+        <div className='img-container'>
           <img src={FashionPlus} alt="image" />
-          <div>
+          </div>
+          <div className='detail-container'>
             <h1 className='project-title'>Fashion Plus</h1>
             <div className='project-tech-stack'>
               <p>HTML</p>

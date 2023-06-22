@@ -28,6 +28,7 @@ const Navbar = () => {
 
 
   return (
+    <div className='nav-container'>
     <div className='navbar'>
       <h1 id="nav-menu">KM</h1>
       {isOpen?<Menu>
@@ -72,6 +73,7 @@ const Navbar = () => {
            <button className='nav-btn resume' onClick={() => window.open("https://drive.google.com/file/d/1Iv46uAZkxIfhftVBNBiJrc-GbB3d0F2C/view?usp=share_link")} id="resume-button-1" > <a href={resume} target="_blank" className='nav-link resume' id="resume-link-1" download="Kinjal-Momaya-Resume.pdf" style={{textDecoration:"none", color:"white"}}>Resume</a></button>
   </div>
 
+</div>
 </div>
   )
 }

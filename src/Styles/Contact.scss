@@ -5,7 +5,6 @@ p {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     padding-top: 20px;
-    margin-bottom: 5px;
 }
 
 p {
@@ -21,7 +20,7 @@ p {
 }
 
 .contact-links {
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
     // width: 80%;
     display: flex;
     flex-direction: column;
@@ -59,5 +58,15 @@ p {
         padding: 5px;
         border-radius: 5px;
         margin: 1px;
+        font-family: "Raleway";
     }
+}
+
+#msg{
+    width: 100%;
+    background-color: rgba(162, 166, 255, 1);
+    margin:30px 0 0 0;
+    padding: 5px;
+    font-family: "DM Sans";
+    font-size: large;
 }

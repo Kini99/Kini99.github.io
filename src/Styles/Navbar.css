@@ -1,14 +1,18 @@
-.navbar {
+.nav-container {
+  width: 100%;
   position: sticky;
   top: 0;
+  z-index: 1;
+  background-color: white;
+}
+
+.navbar {
   width: 60%;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  z-index: 1;
-  background-color: white;
 }
 .navbar h1 {
   background-color: #A2A6FF;

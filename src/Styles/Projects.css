@@ -31,24 +31,34 @@ p {
 .project-card {
   display: flex;
   align-items: flex-start;
-  padding: 0 0 20px 0;
   margin: 20px 40px;
+  border: 1px solid red;
+}
+.project-card .img-container {
+  width: 50%;
+  background-color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 .project-card img {
-  width: 50%;
-  height: 300px;
+  width: 100%;
 }
-.project-card > div {
+.project-card .detail-container {
   width: 50%;
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   padding: 0 20px;
-  height: 300px;
+  height: 100%;
+}
+.project-card .detail-container h1 {
+  margin: 5px 0;
+  padding: 0;
 }
 
 .project-tech-stack {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 5px 80px;
 }
 .project-tech-stack p {
@@ -60,7 +70,7 @@ p {
 #project-button {
   display: flex;
   justify-content: space-between;
-  padding: 10px 80px;
+  padding: 10px 160px;
 }
 #project-button button {
   background-color: rgb(254, 95, 85);
