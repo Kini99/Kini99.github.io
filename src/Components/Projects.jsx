@@ -4,14 +4,42 @@ import ReserveNow from "../Images/ReserveNow.jpg";
 import MagnaMen from "../Images/MagnaMen.jpg";
 import FashionPlus from "../Images/FashionPlus.jpg";
 import HomeSweeter from "../Images/HomeSweeter.png";
+import PrepAI from "../Images/PrepAI.png";
+import CarouselComponent from './CarouselComponent';
+
 
 const Projects = () => {
   return (
     <>
-      <div id="projects">
+      <div id="project-section">
         <h1>My Projects</h1>
         <div id='line'></div>
         <p>A showcase of my best projects</p>
+
+        {/* <div className='project-card'>
+          <div className='img-container'>
+          <img src={PrepAI} alt="image" />
+          </div>
+          <div className='detail-container'>
+            <h1 className='project-title'>Prep AI</h1>
+            <div className='project-tech-stack'>
+            <p>React</p>
+              <p>Javascript</p>
+              <p>Tailwind CSS</p>
+              <p>Chakra UI</p>
+            </div>
+            <div className='project-tech-stack'>
+              <p>Node.js</p>
+              <p>Express</p>
+              <p>MongoDB</p>
+            </div>
+            <p className='project-description'>An AI-powered self-interview preparation platform designed to empower job seekers and interviewees in mastering their interview skills.</p>
+            <div id='project-button'>
+            <a href='https://github.com/Kini99/logicore' target='blank'><button className='project-github-link'>Code Base</button></a>
+            <a href='https://prepai.netlify.app/' target='blank'><button className='project-deployed-link'>Live Demo</button></a>
+            </div>
+          </div>
+        </div>
 
         <div className='project-card'>
           <div className='img-container'>
@@ -32,7 +60,7 @@ const Projects = () => {
             </div>
             <p className='project-description'>An e-commerce platform which acts as a one stop solution for users to buy, sell or rent properties.</p>
             <div id='project-button'>
-            <a href='https://github.com/Kini99/nippy-flavor-9468' target='blank'><button className='project-github-link'>Code Base</button></a>
+            <a href='https://github.com/Kini99/Home-Sweeter' target='blank'><button className='project-github-link'>Code Base</button></a>
             <a href='https://homesweeter.netlify.app/' target='blank'><button className='project-deployed-link'>Live Demo</button></a>
             </div>
           </div>
@@ -94,9 +122,11 @@ const Projects = () => {
             <a href='https://fashionplus100.netlify.app/' target='blank'><button className='project-deployed-link'>Live Demo</button></a>
             </div>
           </div>
-        </div>
+        </div> */}
 
+<CarouselComponent/>
       </div>
+      
     </>
   )
 }
