@@ -19,13 +19,14 @@ const CarouselComponent= () => {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+  
 
   return (
   <Carousel autoPlay={!isHovered} infiniteLoop showArrows={false} showStatus={false} showThumbs={false} stopOnHover={false}>
   <div id="projects" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
     <div className="project-card">
       <div className="img-container">
-        <img src={PrepAI} alt="image" />
+        <img src={PrepAI} alt="project" />
       </div>
       <div className="detail-container">
         <h1 className="project-title">Prep AI</h1>
@@ -60,7 +61,7 @@ const CarouselComponent= () => {
   <div id="projects" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
   <div className='project-card'>
           <div className='img-container'>
-          <img src={HomeSweeter} alt="image" />
+          <img src={HomeSweeter} alt="project" />
           </div>
           <div className='detail-container'>
             <h1 className='project-title'>Home Sweeter</h1>
@@ -75,7 +76,7 @@ const CarouselComponent= () => {
               <p>Express</p>
               <p>MongoDB</p>
             </div>
-            <p className='project-description'>An e-commerce platform which acts as a one stop solution for users to buy, sell or rent properties.</p>
+            <p className='project-description'>A real-estate e-commerce platform which acts as a one stop solution for users to buy, sell or rent properties.</p>
             <div id='project-button'>
             <a href='https://github.com/Kini99/Home-Sweeter' target='blank'><button className='project-github-link'>Code Base</button></a>
             <a href='https://homesweeter.netlify.app/' target='blank'><button className='project-deployed-link'>Live Site</button></a>
@@ -89,7 +90,7 @@ const CarouselComponent= () => {
         <div id="projects" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <div className='project-card'>
         <div className='img-container'>
-          <img src={ReserveNow} alt="image" />
+          <img src={ReserveNow} alt="project" />
           </div>
           <div className='detail-container'>
             <h1 className='project-title'>Reserve Now</h1>
@@ -99,7 +100,7 @@ const CarouselComponent= () => {
               <p>CSS</p>
               <p>Chakra UI</p>
             </div>
-            <p className='project-description'>A travel e-commerce app cloned from booking.com which allows users to book flight tickets seamlessly.</p>
+            <p className='project-description'>A travel e-commerce website cloned from booking.com which allows users to book flight tickets seamlessly.</p>
             <div id='project-button'>
             <a href='https://github.com/Kini99/Reserve-Now' target='blank'><button className='project-github-link'>Code Base</button></a>
             <a href='https://reservenow.netlify.app/' target='blank'><button className='project-deployed-link'>Live Site</button></a>
@@ -113,7 +114,7 @@ const CarouselComponent= () => {
         <div id="projects" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <div className='project-card'>
         <div className='img-container'>
-          <img src={MagnaMen} alt="image" />
+          <img src={MagnaMen} alt="project" />
           </div>
           <div className='detail-container'>
             <h1 className='project-title'>Magna Men</h1>
@@ -122,7 +123,7 @@ const CarouselComponent= () => {
               <p>Javascript</p>
               <p>CSS</p>
             </div>
-            <p className='project-description'>A Fashion e-commerce app cloned from destinationxl.com which allows users to shop plus sized clothes for men.</p>
+            <p className='project-description'>A fashion e-commerce website cloned from destinationxl.com which allows users to shop plus sized clothes for men.</p>
             <div id='project-button'>
             <a href='https://github.com/Kini99/Magna-Men' target='blank'><button className='project-github-link'>Code Base</button></a>
             <a href='https://magnamen.netlify.app/' target='blank'><button className='project-deployed-link'>Live Site</button></a>
@@ -136,7 +137,7 @@ const CarouselComponent= () => {
         <div id="projects" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <div className='project-card'>
         <div className='img-container'>
-          <img src={FashionPlus} alt="image" />
+          <img src={FashionPlus} alt="project" />
           </div>
           <div className='detail-container'>
             <h1 className='project-title'>Fashion Plus</h1>
@@ -145,7 +146,7 @@ const CarouselComponent= () => {
               <p>Javascript</p>
               <p>CSS</p>
             </div>
-            <p className='project-description'>A Fashion e-commerce app cloned from catherines.com which allows users to shop plus sized clothes for women.</p>
+            <p className='project-description'>A fashion e-commerce website cloned from catherines.com which allows users to shop plus sized clothes for women.</p>
             <div id='project-button'>
             <a href='https://github.com/Kini99/FashionPlus' target='blank'><button className='project-github-link'>Code Base</button></a>
             <a href='https://fashionplus100.netlify.app/' target='blank'><button className='project-deployed-link'>Live Site</button></a>

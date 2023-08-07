@@ -1,54 +1,72 @@
 @import "./Variables.scss";
 
-h1,p{
+h1,
+p {
     text-align: center;
-    font-family:  'Raleway', sans-serif;
-    margin-bottom:5px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 5px;
 }
 
-p{
-    margin-top: 8px;  
+p {
+    margin-top: 8px;
 }
 
-#line{
+#line {
     margin: auto;
     height: 1.5px;
-    width:45px;
+    width: 45px;
     background-color: rgba(254, 95, 85, 1);
 }
 
-#skills{
+#skills {
     margin: auto;
     width: 80%;
     padding-top: 20px;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    padding-left: 5%;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
-    gap:25px;
+    gap: 25px;
 }
 
-.skills-card{
+.skills-card {
     height: 150px;
-    width:160px;
+    width: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: "Raleway";
 }
 
-.skills-card-img{
+.skills-card-img {
     height: 60%;
     max-width: 100%;
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
-    #skills{
-        grid-template-columns: repeat(4,1fr);
+    #skills1 {
+        width: 90%;
+        margin: auto;
+    }
+
+    #skills {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        padding-left: 0;
     }
 }
 
 @media all and (min-width: 320px) and (max-width: 767px) {
-    #skills{
-        grid-template-columns: repeat(2,1fr);
+
+    #skills1 {
+        width: 90%;
+        margin: auto;
+    }
+
+    #skills {
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        padding-left: 0;
     }
 }

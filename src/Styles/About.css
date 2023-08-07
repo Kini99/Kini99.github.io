@@ -56,14 +56,48 @@ p {
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
+  #about {
+    width: 90%;
+    margin: auto;
+  }
   .about-section {
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+  }
+  .about-section .about-content {
+    padding: 10px 10px;
+  }
+  .about-section .about-img, .about-section .nav-link {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .about-section button {
+    margin-left: 0;
   }
 }
 @media all and (min-width: 0px) and (max-width: 767px) {
+  #about {
+    width: 90%;
+    margin: auto;
+  }
   .about-section {
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+  }
+  .about-section .about-content {
+    padding: 10px 10px;
+  }
+  .about-section .about-img, .about-section .nav-link {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .about-section button {
+    margin-left: 0;
   }
 }/*# sourceMappingURL=About.css.map */

@@ -1,12 +1,13 @@
-.nav-container{
-  width:100%;
+.nav-container {
+  width: 100%;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 100;
   background-color: white;
 }
+
 .navbar {
-  
+
   width: 60%;
   margin: auto;
   margin-top: 20px;
@@ -28,10 +29,15 @@
     align-items: center;
 
     .nav-btn {
-      font-size: large;
+      font-size: x-large;
+      font-family: "DM Sans";
       border: none;
       background-color: white;
       color: black;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     .resume {
@@ -62,6 +68,21 @@
       display: none;
     }
   }
+
+  .navbar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      padding: 10px 8px;
+      font-size: 25px;
+    }
+
+    .menu {
+      margin-left: 300px;
+    }
+  }
 }
 
 @media all and (min-width: 0px) and (max-width: 767px) {
@@ -70,6 +91,15 @@
 
     button {
       display: none;
+    }
+  }
+
+  .navbar {
+    width: 90%;
+
+    h1 {
+      padding: 10px 5px;
+      font-size: 25px;
     }
   }
 }

@@ -110,9 +110,10 @@ $borderRadius:1em;
         padding:0;
       }
       .subtitle{
-        font-size: 1em;
+        font-size: 1.2em;
         margin: 0;
         padding:0;
+        text-align: center;
       }
       .title,
       .subtitle {
@@ -529,16 +530,26 @@ $recruitmentStatus: $redColor;
 
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
-  // .home {
-  //   flex-direction: column;
-  //   justify-content: center;
-  // }
+  .home {
+    width:90%;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .phone{
+    margin: auto;
+  }
 }
 
 @media all and (min-width:0px) and (max-width: 767px) {
   .home {
+    width:90%;
+    margin: auto;
     flex-direction: column;
     justify-content: center;
+  }
+  .phone{
+    margin: auto;
   }
 }
 

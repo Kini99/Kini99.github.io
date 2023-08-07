@@ -25,23 +25,25 @@ p {
     display: flex;
     width: 60%;
 
-    button{
+    button {
         background-color: rgba(254, 95, 85, 1);
-    border: none;
-    border-radius: 10px;
-    color: white;
-    padding: 5px 12px;
-    font-size: medium; 
-    text-decoration: none;
-    margin-left: 120px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        padding: 5px 12px;
+        font-size: medium;
+        text-decoration: none;
+        margin-left: 120px;
     }
-    button:hover{
-    cursor: pointer;
+
+    button:hover {
+        cursor: pointer;
     }
 
     .about-content {
         padding: 50px 20px;
-        p{
+
+        p {
             text-align: justify;
             font-size: large;
         }
@@ -54,21 +56,61 @@ p {
     }
 }
 
-#transparent{
+#transparent {
     color: transparent;
     font-size: 0.1px;
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
-    .about-section{
+    #about {
+        width: 90%;
+        margin: auto;
+    }
+
+    .about-section {
         flex-direction: column;
         justify-content: center;
+        width: 100%;
+
+        .about-content {
+            padding: 10px 10px;
+        }
+
+        .about-img, .nav-link{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+        button{
+            margin-left: 0;
+        }
     }
 }
 
 @media all and (min-width: 0px) and (max-width: 767px) {
-    .about-section{
+    #about {
+        width: 90%;
+        margin: auto;
+    }
+
+    .about-section {
         flex-direction: column;
         justify-content: center;
+        width: 100%;
+
+        .about-content {
+            padding: 10px 10px;
+        }
+        .about-img, .nav-link{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+        button{
+            margin-left: 0;
+        }
     }
+
 }

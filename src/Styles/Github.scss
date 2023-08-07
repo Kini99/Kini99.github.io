@@ -28,4 +28,27 @@ p{
         margin-bottom:5px;
       color: black;
     }
+    .github-stats{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content: space-around;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 1024px) {
+    #github-container{
+        width:90%;
+        margin:auto;
+    }
+    .github-stats{
+        flex-direction: column;
+    }
+    #github-stats-card{
+        margin-left: -5%;
+        width: 120%;
+    }
+    #github-streak-stats{
+        width: 110%;
+    }
 }

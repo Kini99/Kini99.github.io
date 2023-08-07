@@ -76,9 +76,10 @@
   padding: 0;
 }
 .phone .inner-skin .phone-content .subtitle {
-  font-size: 1em;
+  font-size: 1.2em;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 .phone .inner-skin .phone-content .title,
 .phone .inner-skin .phone-content .subtitle {
@@ -419,10 +420,26 @@
     opacity: 1;
   }
 }
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .home {
+    width: 90%;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .phone {
+    margin: auto;
+  }
+}
 @media all and (min-width: 0px) and (max-width: 767px) {
   .home {
+    width: 90%;
+    margin: auto;
     flex-direction: column;
     justify-content: center;
+  }
+  .phone {
+    margin: auto;
   }
 }
 @keyframes bounce {

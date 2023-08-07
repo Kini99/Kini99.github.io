@@ -2,7 +2,7 @@
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 100;
   background-color: white;
 }
 
@@ -27,10 +27,14 @@
   align-items: center;
 }
 .navbar #nav-menu-container .nav-btn {
-  font-size: large;
+  font-size: x-large;
+  font-family: "DM Sans";
   border: none;
   background-color: white;
   color: black;
+}
+.navbar #nav-menu-container .nav-btn:hover {
+  text-decoration: underline;
 }
 .navbar #nav-menu-container .resume {
   background-color: #FE5F55;
@@ -56,6 +60,18 @@
   #nav-menu-container button {
     display: none;
   }
+  .navbar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar h1 {
+    padding: 10px 8px;
+    font-size: 25px;
+  }
+  .navbar .menu {
+    margin-left: 300px;
+  }
 }
 @media all and (min-width: 0px) and (max-width: 767px) {
   #nav-menu-container {
@@ -63,5 +79,12 @@
   }
   #nav-menu-container button {
     display: none;
+  }
+  .navbar {
+    width: 90%;
+  }
+  .navbar h1 {
+    padding: 10px 5px;
+    font-size: 25px;
   }
 }/*# sourceMappingURL=Navbar.css.map */
