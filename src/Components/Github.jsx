@@ -42,9 +42,9 @@ export default function Github() {
         <Flex justifyContent="space-around"
           direction={{ base: "column", sm: "column", lg: "row", xl: "row" }}
           gap="10px" style={{ alignItems: "center", margin: "20px" }}>
-          <Box className="react-activity-calendar">
+          <Box className="react-activity-calendar" width="100%" m="auto" overflowX="hidden">
             <Image
-              width={{ base: "100%", sm: "100%" }}
+              width="100%"
               m="auto"
               bgColor="#e0e0e0"
               borderRadius="5px"

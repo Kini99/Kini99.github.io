@@ -28,7 +28,7 @@
 }
 .navbar #nav-menu-container .nav-btn {
   font-size: x-large;
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   border: none;
   background-color: white;
   color: black;
@@ -42,7 +42,7 @@
   padding: 0 5px;
   height: 50%;
   color: white;
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   font-size: 20px;
   font-weight: 500;
 }
@@ -54,10 +54,10 @@
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
-  #nav-menu-container {
+  .navbar #nav-menu-container {
     display: none;
   }
-  #nav-menu-container button {
+  .navbar #nav-menu-container button {
     display: none;
   }
   .navbar {
