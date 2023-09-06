@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.986d80cb.css",
-    "main.js": "/static/js/main.fd568731.js",
+    "main.css": "/static/css/main.ea5bb24b.css",
+    "main.js": "/static/js/main.2d80d269.js",
     "static/js/787.f8cd1a75.chunk.js": "/static/js/787.f8cd1a75.chunk.js",
     "static/media/HomeSweeter.png": "/static/media/HomeSweeter.a79ccc15d09592607014.png",
     "static/media/FashionPlus.jpg": "/static/media/FashionPlus.85dccc7d76d1fce30f5b.jpg",
@@ -10,13 +10,15 @@
     "static/media/Kinjal-Momaya-Resume.pdf": "/static/media/Kinjal-Momaya-Resume.1297768c2e36c4378731.pdf",
     "static/media/kinjal.jpg": "/static/media/kinjal.24e74780443e17fd4b39.jpg",
     "static/media/PrepAI.png": "/static/media/PrepAI.b93ed3f8bbea8298a8a2.png",
+    "static/media/chakra.png": "/static/media/chakra.ba230c6d46a26ce7e123.png",
+    "static/media/bg.jpg": "/static/media/bg.78539331200ace66ab35.jpg",
     "index.html": "/index.html",
-    "main.986d80cb.css.map": "/static/css/main.986d80cb.css.map",
-    "main.fd568731.js.map": "/static/js/main.fd568731.js.map",
+    "main.ea5bb24b.css.map": "/static/css/main.ea5bb24b.css.map",
+    "main.2d80d269.js.map": "/static/js/main.2d80d269.js.map",
     "787.f8cd1a75.chunk.js.map": "/static/js/787.f8cd1a75.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.986d80cb.css",
-    "static/js/main.fd568731.js"
+    "static/css/main.ea5bb24b.css",
+    "static/js/main.2d80d269.js"
   ]
 }
