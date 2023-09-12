@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9547f784.css",
-    "main.js": "/static/js/main.2d80d269.js",
+    "main.css": "/static/css/main.e624a146.css",
+    "main.js": "/static/js/main.21d09a45.js",
     "static/js/787.f8cd1a75.chunk.js": "/static/js/787.f8cd1a75.chunk.js",
     "static/media/HomeSweeter.png": "/static/media/HomeSweeter.a79ccc15d09592607014.png",
     "static/media/FashionPlus.jpg": "/static/media/FashionPlus.85dccc7d76d1fce30f5b.jpg",
@@ -11,14 +11,16 @@
     "static/media/kinjal.jpg": "/static/media/kinjal.24e74780443e17fd4b39.jpg",
     "static/media/PrepAI.png": "/static/media/PrepAI.b93ed3f8bbea8298a8a2.png",
     "static/media/chakra.png": "/static/media/chakra.ba230c6d46a26ce7e123.png",
+    "static/media/jwt.png": "/static/media/jwt.18bb7e6943602b4a8f01.png",
+    "static/media/reactnative.png": "/static/media/reactnative.90fb0021be64f2b1ce7e.png",
     "static/media/bg.jpg": "/static/media/bg.78539331200ace66ab35.jpg",
     "index.html": "/index.html",
-    "main.9547f784.css.map": "/static/css/main.9547f784.css.map",
-    "main.2d80d269.js.map": "/static/js/main.2d80d269.js.map",
+    "main.e624a146.css.map": "/static/css/main.e624a146.css.map",
+    "main.21d09a45.js.map": "/static/js/main.21d09a45.js.map",
     "787.f8cd1a75.chunk.js.map": "/static/js/787.f8cd1a75.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9547f784.css",
-    "static/js/main.2d80d269.js"
+    "static/css/main.e624a146.css",
+    "static/js/main.21d09a45.js"
   ]
 }
