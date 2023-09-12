@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 // import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import "../Styles/Navbar.css";
-import { Button, IconButton, Menu, MenuButton, MenuItem, MenuList, Text } from '@chakra-ui/react';
+import { Button, IconButton, Menu, MenuButton, MenuItem, MenuList, Text, useMediaQuery } from '@chakra-ui/react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import resume from "../Kinjal-Momaya-Resume.pdf";
 import { HashLink as Link } from "react-router-hash-link";
@@ -10,6 +10,7 @@ import { HashLink as Link } from "react-router-hash-link";
 const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
+  const [sizing]=useMediaQuery('(max-width: 1024px)')
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 1024px)');
@@ -127,7 +128,7 @@ const Navbar = () => {
             </MenuItem>
           </MenuList>
         </Menu> : null}
-        <div id="nav-menu-container">
+        <div id="nav-menu-container" style={{ display: sizing ? 'none' : 'flex' }}>
           <button className='nav-btn' style={{ cursor: 'pointer', border: "none" }} onClick={handleHomeClick}>Home</button>
           <button className='nav-btn' style={{ cursor: 'pointer', border: "none" }} onClick={handleAboutClick}>About</button>
           <button className='nav-btn' style={{ cursor: 'pointer', border: "none" }} onClick={handleSkillsClick}>Skills</button>

@@ -20,11 +20,13 @@ export default function Github() {
               id="github-stats-card"
               src="https://github-readme-stats.vercel.app/api?username=kini99"
               alt="Stats"
+              width={"60%"}
             />
             <Image
               id="github-streak-stats"
               src="https://github-readme-streak-stats.herokuapp.com?user=kini99"
               alt="Strek"
+              width={"60%"}
             />
         </div>
         <Flex justifyContent="space-around"

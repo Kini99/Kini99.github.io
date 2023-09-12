@@ -22,7 +22,8 @@ const CarouselComponent= () => {
   
 
   return (
-  <Carousel autoPlay={!isHovered} infiniteLoop showArrows={false} showStatus={false} showThumbs={false} stopOnHover={false}>
+  // <Carousel autoPlay={!isHovered} infiniteLoop showArrows={false} showStatus={false} showThumbs={false} stopOnHover={false}>
+    <>
   <div id="projects" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
     <div className="project-card">
       <div className="img-container">
@@ -157,7 +158,8 @@ const CarouselComponent= () => {
           </div>
         </div>
         </div>
-</Carousel>
+        </>
+//</Carousel> 
 );
 }
 

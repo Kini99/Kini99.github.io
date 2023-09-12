@@ -23,7 +23,7 @@ p {
   margin: auto;
   width: 60%;
   margin-top: 20px;
-  background-color: rgb(246, 174, 45);
+  background-color: #93b3b0;
   display: flex;
   flex-direction: column;
 }
@@ -45,6 +45,10 @@ p {
   justify-content: center;
   border: 0.3px solid #d1d1d1;
   margin: auto;
+  padding: 0 20px;
+}
+.project-card .img-container img {
+  width: 100%;
 }
 .project-card .detail-container {
   width: 80%;
@@ -104,6 +108,10 @@ p {
   }
   #projects .project-card .img-container {
     width: 100%;
+    padding: 0;
+  }
+  #projects .project-card .img-container img {
+    width: 100%;
   }
   #projects .project-card .detail-container {
     width: 100%;
@@ -140,6 +148,10 @@ p {
     margin-top: 0;
   }
   #projects .project-card .img-container {
+    width: 100%;
+    padding: 0;
+  }
+  #projects .project-card .img-container img {
     width: 100%;
   }
   #projects .project-card .detail-container {

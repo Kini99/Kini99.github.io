@@ -20,13 +20,16 @@ p {
 
 #skills {
     margin: auto;
-    width: 80%;
+    width: 70%;
     padding-top: 20px;
-    display: grid;
-    padding-left: 5%;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // padding-left: 5%;
+    // grid-template-columns: repeat(5, 1fr);
+    // grid-template-rows: auto;
     gap: 25px;
+    // place-items: center;
 }
 
 .skills-card {

@@ -3,14 +3,13 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: white;
+  background-color: #fde6df;
 }
 
 .navbar {
-
   width: 60%;
   margin: auto;
-  margin-top: 20px;
+  // margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
@@ -32,7 +31,7 @@
       font-size: x-large;
       font-family: "DM Sans", sans-serif;
       border: none;
-      background-color: white;
+      background-color: transparent;
       color: black;
 
       &:hover {
@@ -62,15 +61,6 @@
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
 
-  .navbar {
-    #nav-menu-container {
-      display: none;
-
-      button {
-        display: none;
-      }
-    }
-  }
 
   .navbar {
     width: 90%;
@@ -84,6 +74,14 @@
 
     .menu {
       margin-left: 300px;
+    }
+
+    #nav-menu-container {
+      display: none;
+
+      button {
+        display: none;
+      }
     }
   }
 }
