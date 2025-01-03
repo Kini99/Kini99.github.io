@@ -33,11 +33,12 @@ p {
         padding: 5px 12px;
         font-size: medium;
         text-decoration: none;
-        // margin-left: 80px;
+        transition: transform 0.3s;
     }
 
     button:hover {
         cursor: pointer;
+        transform: scale(1.10);
     }
 
     .about-content {

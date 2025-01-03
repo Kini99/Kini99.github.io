@@ -48,6 +48,12 @@
       font-family: "DM Sans", sans-serif;
       font-size: 20px;
       font-weight: 500;
+      transition: transform 0.3s;
+    }
+    .resume:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+      text-decoration: none;
     }
   }
 }

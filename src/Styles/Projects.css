@@ -87,9 +87,11 @@ p {
   padding: 5px 12px;
   font-size: medium;
   text-decoration: none;
+  transition: transform 0.3s;
 }
 #project-button button:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {

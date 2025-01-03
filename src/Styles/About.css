@@ -32,12 +32,14 @@ p {
   padding: 5px 12px;
   font-size: medium;
   text-decoration: none;
+  transition: transform 0.3s;
 }
 .about-section button:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 .about-section .about-content {
-  padding: 50px 20px;
+  padding: 30px 20px;
 }
 .about-section .about-content p {
   text-align: justify;

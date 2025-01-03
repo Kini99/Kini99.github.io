@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-// import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import "../Styles/Navbar.css";
 import { Button, IconButton, Menu, MenuButton, MenuItem, MenuList, Text, useMediaQuery } from '@chakra-ui/react';
@@ -123,7 +122,7 @@ const Navbar = () => {
             <MenuItem style={{ border: "none", color: "black", margin: "10px", backgroundColor: "transparent" }}>
               <button style={{ cursor: 'pointer', border: "none", backgroundColor: "transparent", fontSize: "large", fontWeight: "bold" }} onClick={handleContactClick}>Contact</button>
             </MenuItem>
-            <MenuItem style={{ border: "none", color: "black", marginLeft: "15px", paddingBottom: "10px", backgroundColor: "transparent" }} onClick={() => window.open("https://drive.google.com/file/d/1Iv46uAZkxIfhftVBNBiJrc-GbB3d0F2C/view?usp=share_link")} id="resume-button-1" >
+            <MenuItem style={{ border: "none", color: "black", marginLeft: "15px", paddingBottom: "10px", backgroundColor: "transparent" }} onClick={() => window.open("https://drive.google.com/file/d/1It3gBsrcPZeR_GeumkNLrBtxWLw6pU0p/view?usp=drive_link")} id="resume-button-1" >
               <a href={resume} target="_blank" rel='noreferrer' className='nav-link resume' id="resume-link-1" download="Kinjal-Momaya-Resume" style={{ textDecoration: "none", color: "black", fontSize: "large", fontWeight: "bold" }}>Resume</a>
             </MenuItem>
           </MenuList>
@@ -135,7 +134,7 @@ const Navbar = () => {
           <button className='nav-btn' style={{ cursor: 'pointer', border: "none" }} onClick={handleProjectsClick}>Projects</button>
           <button className='nav-btn' style={{ cursor: 'pointer', border: "none" }} onClick={handleGithubClick}>Github</button>
           <button className='nav-btn' style={{ cursor: 'pointer', border: "none" }} onClick={handleContactClick}>Contact</button>
-          <button className='nav-btn resume' onClick={() => window.open("https://drive.google.com/file/d/1Iv46uAZkxIfhftVBNBiJrc-GbB3d0F2C/view?usp=share_link")} id="resume-button-1" > <a href={resume} target="_blank" className='nav-link resume' id="resume-link-1" download="Kinjal-Momaya-Resume.pdf" style={{ textDecoration: "none", color: "white" }}>Resume</a></button>
+          <button className='nav-btn resume' onClick={() => window.open("https://drive.google.com/file/d/1It3gBsrcPZeR_GeumkNLrBtxWLw6pU0p/view?usp=drive_link")} id="resume-button-1" > <a href={resume} target="_blank" className='nav-link resume' id="resume-link-1" download="Kinjal-Momaya-Resume.pdf" style={{ textDecoration: "none", color: "white" }}>Resume</a></button>
         </div>
       </div>
     </div>

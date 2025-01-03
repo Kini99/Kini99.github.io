@@ -6,6 +6,10 @@ p {
   margin-bottom: 5px;
 }
 
+h2 {
+  font-family: "Raleway", sans-serif;
+}
+
 p {
   margin-top: 8px;
 }
@@ -29,11 +33,16 @@ p {
 
 .skills-card {
   height: 150px;
-  width: 160px;
+  width: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Raleway";
+  transition: transform 0.3s;
+}
+
+.skills-card:hover {
+  transform: scale(1.1);
 }
 
 .skills-card-img {

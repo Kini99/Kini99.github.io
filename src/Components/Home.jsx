@@ -31,7 +31,7 @@ const Home = () => {
       <div id='home-details'>
         <h1>Hey!</h1>
         <h2 id='user-detail-name'>I'm Kinjal Momaya.</h2>
-        <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Time+New+Roman&color=black&size=25&left=true&vCenter=true&width=400&height=50&lines=Full+Stack+Web+Developer++;MERN+Developer++;" className='a-img' id="user-detail-intro" alt='' /></a>
+        <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Time+New+Roman&color=black&size=25&left=true&vCenter=true&width=400&height=50&lines=Full+Stack+Developer++;MERN+Developer++;" className='a-img' id="user-detail-intro" alt='' /></a>
         <br />
         <button className='contact' style={{ cursor: 'pointer', border: "none" }} onClick={handleHireMeClick}>Hire Me</button>
         <button className='about' style={{ cursor: 'pointer', border: "none" }} onClick={handleKnowMoreClick}>Know More</button>

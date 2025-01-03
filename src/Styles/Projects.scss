@@ -48,8 +48,9 @@ p {
         border: 0.3px solid #d1d1d1;
         margin: auto;
         padding: 0 20px;
-        img{
-            width:100%;
+
+        img {
+            width: 100%;
         }
     }
 
@@ -93,52 +94,60 @@ p {
         padding: 5px 12px;
         font-size: medium;
         text-decoration: none;
+        transition: transform 0.3s;
     }
 
     button:hover {
         cursor: pointer;
+        transform: scale(1.10);
     }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
-    #project-section{
-        width:90%;
-        margin:auto;
+    #project-section {
+        width: 90%;
+        margin: auto;
     }
 
-    #projects{
-        width:100%;
+    #projects {
+        width: 100%;
         padding: 0;
+
         .project-card {
             flex-direction: column;
-            width:100%;
+            width: 100%;
             margin-top: 0;
-    .img-container {
-        width: 100%;
-        padding: 0;
-        img{
-            width:100%;
+
+            .img-container {
+                width: 100%;
+                padding: 0;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .detail-container {
+                width: 100%;
+                padding: 0;
+            }
         }
     }
-    .detail-container {
-        width: 100%;
-        padding: 0;
-    }
-        }
-    }
+
     .project-tech-stack {
         display: flex;
         justify-content: space-evenly;
         padding: 2px 0;
-    
+
         p {
             font-size: small;
             padding: 2px 10px;
         }
     }
+
     #project-button {
         padding: 10px 10px;
-    
+
         button {
             padding: 2px 10px;
         }
@@ -146,44 +155,50 @@ p {
 }
 
 @media all and (min-width: 320px) and (max-width: 767px) {
-    #project-section{
-        width:90%;
-        margin:auto;
+    #project-section {
+        width: 90%;
+        margin: auto;
     }
 
-    #projects{
-        width:100%;
+    #projects {
+        width: 100%;
         padding: 0;
+
         .project-card {
             flex-direction: column;
-            width:100%;
+            width: 100%;
             margin-top: 0;
-    .img-container {
-        width: 100%;
-        padding: 0;
-        img{
-            width:100%;
+
+            .img-container {
+                width: 100%;
+                padding: 0;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .detail-container {
+                width: 100%;
+                padding: 0;
+            }
         }
     }
-    .detail-container {
-        width: 100%;
-        padding: 0;
-    }
-        }
-    }
+
     .project-tech-stack {
         display: flex;
         justify-content: space-evenly;
         padding: 2px 0;
-    
+
         p {
             font-size: small;
             padding: 2px 10px;
         }
     }
+
     #project-button {
         padding: 10px 10px;
-    
+
         button {
             padding: 2px 10px;
         }
