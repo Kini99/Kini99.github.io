@@ -18,7 +18,8 @@ const About = () => {
             className="about-img home-img"
           />
           <a
-            href="https://drive.google.com/file/d/12gX-ZogqQlPiFpqgnK5mRVtjErLz0tIp/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1f-1o5e_4QVXGYl1XvfpCYNzQLMegZJed/view" 
+
             target="_blank"
             rel="noreferrer"
             className="nav-link resume"
