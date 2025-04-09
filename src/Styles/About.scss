@@ -1,0 +1,117 @@
+@import "./Variables.scss";
+
+h1,
+p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 20px;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-top: 8px;
+    padding-top: 0;
+}
+
+#line {
+    margin: auto;
+    height: 0.5px;
+    width: 45px;
+    background-color: rgba(254, 95, 85, 1);
+}
+
+.about-section {
+    margin: auto;
+    display: flex;
+    width: 60%;
+
+    button {
+        background-color: rgba(254, 95, 85, 1);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        padding: 5px 12px;
+        font-size: medium;
+        text-decoration: none;
+        transition: transform 0.3s;
+    }
+
+    button:hover {
+        cursor: pointer;
+        transform: scale(1.10);
+    }
+
+    .about-content {
+        padding: 50px 20px;
+
+        p {
+            text-align: justify;
+            font-size: large;
+        }
+    }
+
+    .about-img {
+        padding: 20px;
+        height: 300px;
+        border-radius: 50%;
+    }
+}
+
+#transparent {
+    color: transparent;
+    font-size: 0.1px;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    #about {
+        width: 90%;
+        margin: auto;
+    }
+
+    .about-section {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+        .about-content {
+            padding: 10px 10px;
+        }
+
+        .about-img, .nav-link{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+        button{
+            margin-left: 0;
+        }
+    }
+}
+
+@media all and (min-width: 0px) and (max-width: 767px) {
+    #about {
+        width: 90%;
+        margin: auto;
+    }
+
+    .about-section {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+        .about-content {
+            padding: 10px 10px;
+        }
+        .about-img, .nav-link{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+        button{
+            margin-left: 0;
+        }
+    }
+
+}

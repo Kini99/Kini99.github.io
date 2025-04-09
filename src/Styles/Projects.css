@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+h1,
+p {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-top: 8px;
+  padding-top: 0;
+}
+
+#line {
+  margin: auto;
+  height: 0.5px;
+  width: 45px;
+  background-color: rgb(254, 95, 85);
+}
+
+#projects {
+  margin: auto;
+  width: 60%;
+  margin-top: 20px;
+  background-color: #93b3b0;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card {
+  display: flex;
+  align-items: flex-start;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  flex-direction: column;
+  width: 100%;
+}
+.project-card .img-container {
+  width: 80%;
+  background-color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border: 0.3px solid #d1d1d1;
+  margin: auto;
+  padding: 0 20px;
+}
+.project-card .img-container img {
+  width: 100%;
+}
+.project-card .detail-container {
+  width: 80%;
+  text-align: center;
+  background-color: white;
+  padding: 0 20px;
+  height: 250px;
+  margin: auto;
+}
+.project-card .detail-container h1 {
+  margin: 5px 0;
+  padding: 0;
+}
+
+.project-tech-stack {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 80px;
+}
+.project-tech-stack p {
+  background-color: rgb(246, 174, 45);
+  padding: 5px 12px;
+  border-radius: 15px;
+}
+
+#project-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 160px;
+}
+#project-button button {
+  background-color: rgb(254, 95, 85);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 12px;
+  font-size: medium;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+#project-button button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #project-section {
+    width: 90%;
+    margin: auto;
+  }
+  #projects {
+    width: 100%;
+    padding: 0;
+  }
+  #projects .project-card {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
+  }
+  #projects .project-card .img-container {
+    width: 100%;
+    padding: 0;
+  }
+  #projects .project-card .img-container img {
+    width: 100%;
+  }
+  #projects .project-card .detail-container {
+    width: 100%;
+    padding: 0;
+  }
+  .project-tech-stack {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2px 0;
+  }
+  .project-tech-stack p {
+    font-size: small;
+    padding: 2px 10px;
+  }
+  #project-button {
+    padding: 10px 10px;
+  }
+  #project-button button {
+    padding: 2px 10px;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 767px) {
+  #project-section {
+    width: 90%;
+    margin: auto;
+  }
+  #projects {
+    width: 100%;
+    padding: 0;
+  }
+  #projects .project-card {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
+  }
+  #projects .project-card .img-container {
+    width: 100%;
+    padding: 0;
+  }
+  #projects .project-card .img-container img {
+    width: 100%;
+  }
+  #projects .project-card .detail-container {
+    width: 100%;
+    padding: 0;
+  }
+  .project-tech-stack {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2px 0;
+  }
+  .project-tech-stack p {
+    font-size: small;
+    padding: 2px 10px;
+  }
+  #project-button {
+    padding: 10px 10px;
+  }
+  #project-button button {
+    padding: 2px 10px;
+  }
+}/*# sourceMappingURL=Projects.css.map */
