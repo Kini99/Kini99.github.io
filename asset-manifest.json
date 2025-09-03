@@ -1,28 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.f04c72e8.css",
-    "main.js": "/static/js/main.0630ebf7.js",
+    "main.css": "/static/css/main.6bc6eddb.css",
+    "main.js": "/static/js/main.699a0cb5.js",
     "static/js/787.f8cd1a75.chunk.js": "/static/js/787.f8cd1a75.chunk.js",
     "static/media/HomeSweeter.png": "/static/media/HomeSweeter.a79ccc15d09592607014.png",
-    "static/media/FashionPlus.jpg": "/static/media/FashionPlus.85dccc7d76d1fce30f5b.jpg",
-    "static/media/ReserveNow.jpg": "/static/media/ReserveNow.57bbe5228c3d8c0880b2.jpg",
-    "static/media/MagnaMen.jpg": "/static/media/MagnaMen.31040a1a7f0a70bb29a9.jpg",
     "static/media/Workflow.png": "/static/media/Workflow.fa635a7331e00fa279ec.png",
     "static/media/kinjal.jpg": "/static/media/kinjal.24e74780443e17fd4b39.jpg",
     "static/media/PrepAI.png": "/static/media/PrepAI.b93ed3f8bbea8298a8a2.png",
     "static/media/LmsSupport.png": "/static/media/LmsSupport.727afd9b3f525763b2fa.png",
     "static/media/Kinjal-Momaya-Resume.pdf": "/static/media/Kinjal-Momaya-Resume.3128b3595d7bb700d1df.pdf",
-    "static/media/chakra.png": "/static/media/chakra.ba230c6d46a26ce7e123.png",
-    "static/media/jwt.png": "/static/media/jwt.18bb7e6943602b4a8f01.png",
-    "static/media/reactnative.png": "/static/media/reactnative.90fb0021be64f2b1ce7e.png",
-    "static/media/bg.jpg": "/static/media/bg.78539331200ace66ab35.jpg",
     "index.html": "/index.html",
-    "main.f04c72e8.css.map": "/static/css/main.f04c72e8.css.map",
-    "main.0630ebf7.js.map": "/static/js/main.0630ebf7.js.map",
+    "main.6bc6eddb.css.map": "/static/css/main.6bc6eddb.css.map",
+    "main.699a0cb5.js.map": "/static/js/main.699a0cb5.js.map",
     "787.f8cd1a75.chunk.js.map": "/static/js/787.f8cd1a75.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f04c72e8.css",
-    "static/js/main.0630ebf7.js"
+    "static/css/main.6bc6eddb.css",
+    "static/js/main.699a0cb5.js"
   ]
 }
