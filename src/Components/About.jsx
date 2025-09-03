@@ -30,25 +30,28 @@ const About = () => {
         </div>
         <div className="about-content" id="user-detail-intro">
           <p>
-            Greetings! I'm Kinjal Momaya, a passionate Full Stack Developer
-            specializing in building exceptional web and mobile applications.
-            With 1.5 years of professional experience, I have honed my skills in
-            the MERN stack and React Native to create user-friendly, scalable
-            solutions. Currently, I'm on an exciting journey to deepen my
-            expertise in Android and iOS development, aiming to deliver seamless
-            digital experiences across platforms.
+            Greetings! I'm Kinjal Momaya, a versatile AI Engineer with a strong 
+            foundation in Full Stack Development (1.9 years, MERN & React Native). 
+            I specialize in building scalable, real-time applications and have 
+            extensive experience in LLM integration, RAG pipelines, Multi-Agent 
+            workflows, and Vector databases.
           </p>
           <p>
-            When I'm not coding, you'll find me exploring my creative side
-            through painting or experimenting in the kitchen with new recipes.
+            I'm passionate about applying AI to solve complex problems, optimize 
+            workflows, and deliver intelligent, user-centric solutions. My expertise 
+            spans from building AI-powered support systems that automate 70-80% of 
+            queries to creating conversational commerce frameworks that boost lead 
+            conversions by ~90%.
           </p>
           <p>
-            I thrive on continuous learning and enjoy turning innovative ideas
-            into reality. Let's collaborate and bring your vision to life with
-            cutting-edge technologies and thoughtful designs!
+            When I'm not coding, you'll find me exploring my creative side through 
+            painting or experimenting in the kitchen with new recipes. I thrive on 
+            continuous learning and enjoy turning innovative ideas into reality. 
+            Let's collaborate and bring your vision to life with cutting-edge AI 
+            technologies and thoughtful designs!
           </p>
           <p id="transparent">
-            HTML CSS Javascript React Nodejs Express MongoDB
+            AI Engineering • Full Stack Development • LLM Integration • RAG Pipelines • Multi-Agent Workflows
           </p>
         </div>
       </div>
