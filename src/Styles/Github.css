@@ -1,53 +1,387 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-h1, p {
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  margin-bottom: 5px;
-}
-
-p {
-  margin-top: 8px;
-}
-
-#line {
-  margin: auto;
-  height: 1.5px;
-  width: 45px;
-  background-color: rgb(254, 95, 85);
-}
-
-#github-container {
-  margin: auto;
-  width: 60%;
-  padding-top: 10px;
-  align-items: center;
-}
-#github-container h2 {
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  margin-bottom: 5px;
-  color: black;
-}
-#github-container .github-stats {
+/* Modern GitHub Section Styles */
+.github-container {
   display: flex;
-  width: 80%;
-  margin: auto;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: var(--spacing-3xl);
+  margin-top: var(--spacing-2xl);
 }
 
-@media all and (min-width: 320px) and (max-width: 1024px) {
-  #github-container {
-    width: 90%;
-    margin: auto;
+/* GitHub Profile Card */
+.github-profile-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-2xl);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.github-profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.github-icon {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.profile-header h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.github-profile-card p {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.6;
+}
+
+.github-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: white;
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-md);
+}
+
+.github-link-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+}
+
+/* GitHub Statistics Section */
+.github-stats-section {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-2xl);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-normal);
+}
+
+.github-stats-section:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-xl);
+}
+
+.stats-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.stats-icon {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+}
+
+.stats-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-lg);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-normal);
+  overflow: hidden;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.github-stat-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-normal);
+}
+
+.stat-card:hover .github-stat-image {
+  transform: scale(1.02);
+}
+
+/* Languages Section */
+.github-languages-section {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-2xl);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-normal);
+}
+
+.github-languages-section:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-xl);
+}
+
+.languages-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.languages-icon {
+  font-size: 1.75rem;
+  color: var(--accent-color);
+}
+
+.languages-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.languages-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-lg);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-normal);
+  overflow: hidden;
+}
+
+.languages-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.github-lang-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-normal);
+}
+
+.languages-card:hover .github-lang-image {
+  transform: scale(1.02);
+}
+
+/* Calendar Section */
+.github-calendar-section {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-2xl);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-normal);
+}
+
+.github-calendar-section:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-xl);
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.calendar-icon {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+}
+
+.calendar-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.calendar-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-lg);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-normal);
+  overflow: hidden;
+}
+
+.calendar-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.github-calendar-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-normal);
+}
+
+.calendar-card:hover .github-calendar-image {
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
   }
-  .github-stats {
+  
+  .github-container {
+    gap: var(--spacing-2xl);
+  }
+  
+  .github-profile-card,
+  .github-stats-section,
+  .github-languages-section,
+  .github-calendar-section {
+    padding: var(--spacing-xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .github-container {
+    gap: var(--spacing-xl);
+  }
+  
+  .profile-header {
     flex-direction: column;
+    gap: var(--spacing-sm);
   }
-  #github-stats-card {
-    margin-left: -5%;
-    width: 120%;
+  
+  .github-icon {
+    font-size: 1.75rem;
   }
-  #github-streak-stats {
-    width: 110%;
+  
+  .profile-header h3 {
+    font-size: 1.5rem;
   }
-}/*# sourceMappingURL=Github.css.map */
+  
+  .stats-header,
+  .languages-header,
+  .calendar-header {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-sm);
+  }
+  
+  .stats-icon,
+  .languages-icon,
+  .calendar-icon {
+    font-size: 1.5rem;
+  }
+  
+  .stats-header h3,
+  .languages-header h3,
+  .calendar-header h3 {
+    font-size: 1.25rem;
+  }
+  
+  .github-profile-card,
+  .github-stats-section,
+  .github-languages-section,
+  .github-calendar-section {
+    padding: var(--spacing-lg);
+  }
+  
+  .stat-card,
+  .languages-card,
+  .calendar-card {
+    padding: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .github-profile-card p {
+    font-size: 1rem;
+  }
+  
+  .github-link-btn {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: 0.9rem;
+  }
+  
+  .github-profile-card,
+  .github-stats-section,
+  .github-languages-section,
+  .github-calendar-section {
+    padding: var(--spacing-md);
+  }
+}
+
+/* Animation Enhancements */
+@keyframes githubCardFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+.github-profile-card:nth-child(1) {
+  animation: githubCardFloat 4s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.github-stats-section:nth-child(2) {
+  animation: githubCardFloat 4s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.github-languages-section:nth-child(3) {
+  animation: githubCardFloat 4s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+.github-calendar-section:nth-child(4) {
+  animation: githubCardFloat 4s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+/* Hover Effects */
+.github-profile-card:hover .github-icon {
+  transform: scale(1.1);
+  color: var(--primary-color);
+}
+
+.github-stats-section:hover .stats-icon {
+  transform: scale(1.1);
+}
+
+.github-languages-section:hover .languages-icon {
+  transform: scale(1.1);
+}
+
+.github-calendar-section:hover .calendar-icon {
+  transform: scale(1.1);
+}

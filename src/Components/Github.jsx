@@ -1,61 +1,95 @@
-import { Box, Flex, Heading, Image } from "@chakra-ui/react";
+import React from "react";
 import "../Styles/Github.css";
-import { BiLinkExternal } from "react-icons/bi"
-import { Link } from "react-router-dom";
+import { FaGithub, FaExternalLinkAlt, FaCode, FaCalendarAlt, FaChartLine } from 'react-icons/fa';
 
 export default function Github() {
   return (
-    <div id="github">
-      <h1>My Github</h1>
-      <div id='line'></div>
-      <p>All my work in codes</p>
-      <div id="github-container">
-      <Link to="https://github.com/Kini99" target="_blank" style={{ textDecoration: 'none' }}><h2>Visit my Account <BiLinkExternal /></h2></Link>
-        <h2>Github Statistics</h2>
-        <div className="github-stats"
-          justifyContent="space-around"
-          direction={{ base: "column", sm: "column", lg: "row", xl: "row" }} style={{ alignItems: "center" }}
-        >
-            <Image
-              id="github-stats-card"
-              src="https://github-readme-stats.vercel.app/api?username=kini99"
-              alt="Stats"
-              width={"60%"}
-            />
-            <Image
-              id="github-streak-stats"
-              src="https://github-readme-streak-stats.herokuapp.com?user=kini99"
-              alt="Strek"
-              width={"60%"}
-            />
+    <section id="github" className="section">
+      <div className="section-content">
+        <div className="section-header animate-fade-in-up">
+          <h2>My GitHub</h2>
+          <div className="section-divider"></div>
+          <p>Explore my code repositories and development activity</p>
         </div>
-        <Flex justifyContent="space-around"
-          direction={{ base: "column", sm: "column", lg: "row", xl: "row" }}
-          gap="10px" style={{ alignItems: "center", margin: "20px" }}>
-          <Box>
-            <Image
-              id="github-top-langs"
-              src="https://github-readme-stats.vercel.app/api/top-langs/?username=kini99&theme=dark"
-              alt="Language"
-            />
-          </Box>
-        </Flex>
-        <h2>Github Calendar</h2>
-        <Flex justifyContent="space-around"
-          direction={{ base: "column", sm: "column", lg: "row", xl: "row" }}
-          gap="10px" style={{ alignItems: "center", margin: "20px" }}>
-          <Box className="react-activity-calendar" width="100%" m="auto" overflowX="hidden">
-            <Image
-              width="100%"
-              m="auto"
-              bgColor="#e0e0e0"
-              borderRadius="5px"
-              src="https://ghchart.rshah.org/kini99"
-              alt="Git Calender"
-            />
-          </Box>
-        </Flex>
+
+        <div className="github-container">
+          {/* GitHub Profile Link */}
+          <div className="github-profile-card animate-fade-in-left">
+            <div className="profile-header">
+              <FaGithub className="github-icon" />
+              <h3>GitHub Profile</h3>
+            </div>
+            <p>Check out my repositories, contributions, and coding journey</p>
+            <a 
+              href="https://github.com/Kini99" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="github-link-btn"
+            >
+              <FaExternalLinkAlt />
+              Visit My Profile
+            </a>
+          </div>
+
+          {/* GitHub Statistics */}
+          <div className="github-stats-section animate-fade-in-up">
+            <div className="stats-header">
+              <FaChartLine className="stats-icon" />
+              <h3>GitHub Statistics</h3>
+            </div>
+            
+            <div className="stats-grid">
+              <div className="stat-card">
+                <img
+                  src="https://github-readme-stats.vercel.app/api?username=kini99&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117"
+                  alt="GitHub Stats"
+                  className="github-stat-image"
+                />
+              </div>
+              
+              <div className="stat-card">
+                <img
+                  src="https://github-readme-streak-stats.herokuapp.com?user=kini99&theme=dark&hide_border=true&background=0D1117"
+                  alt="GitHub Streak"
+                  className="github-stat-image"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Top Languages */}
+          <div className="github-languages-section animate-fade-in-up">
+            <div className="languages-header">
+              <FaCode className="languages-icon" />
+              <h3>Most Used Languages</h3>
+            </div>
+            
+            <div className="languages-card">
+              <img
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=kini99&layout=compact&theme=dark&hide_border=true&bg_color=0D1117"
+                alt="Top Languages"
+                className="github-lang-image"
+              />
+            </div>
+          </div>
+
+          {/* GitHub Calendar */}
+          <div className="github-calendar-section animate-fade-in-up">
+            <div className="calendar-header">
+              <FaCalendarAlt className="calendar-icon" />
+              <h3>Contribution Calendar</h3>
+            </div>
+            
+            <div className="calendar-card">
+              <img
+                src="https://ghchart.rshah.org/kini99"
+                alt="GitHub Contribution Calendar"
+                className="github-calendar-image"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

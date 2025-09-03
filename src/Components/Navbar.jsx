@@ -1,143 +1,112 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "../Styles/Navbar.css";
-import { Button, IconButton, Menu, MenuButton, MenuItem, MenuList, Text, useMediaQuery } from '@chakra-ui/react';
-import { GiHamburgerMenu } from "react-icons/gi";
+import { FaBars, FaTimes, FaDownload } from 'react-icons/fa';
 import resume from "../Kinjal-Momaya-Resume.pdf";
-import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
-
   const [isOpen, setIsOpen] = useState(false);
-  const [sizing]=useMediaQuery('(max-width: 1024px)')
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 1024px)');
-
-    const handleMediaQueryChange = (event) => {
-      setIsOpen(event.matches);
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
     };
 
-    handleMediaQueryChange(mediaQuery);
-    mediaQuery.addEventListener('change', handleMediaQueryChange);
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1024);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Initial check
 
     return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
-  const handleHomeClick = () => {
-    const homeSection = document.getElementById("home");
-    if (homeSection) {
-      const offset = homeSection.offsetTop - 70;
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const offset = section.offsetTop - 80;
       window.scrollTo({
         top: offset,
         behavior: "smooth"
       });
     }
+    setIsOpen(false); // Close mobile menu
   };
 
-  const handleAboutClick = () => {
-    const aboutSection = document.getElementById("about");
-    if (aboutSection) {
-      const offset = aboutSection.offsetTop - 50;
-      window.scrollTo({
-        top: offset,
-        behavior: "smooth"
-      });
-    }
+  const handleResumeClick = () => {
+    window.open("https://drive.google.com/file/d/1f-1o5e_4QVXGYl1XvfpCYNzQLMegZJed/view", "_blank");
+    setIsOpen(false);
   };
 
-  const handleSkillsClick = () => {
-    const skillsSection = document.getElementById("skills1");
-    if (skillsSection) {
-      const offset = skillsSection.offsetTop - 50;
-      window.scrollTo({
-        top: offset,
-        behavior: "smooth"
-      });
-    }
+  const toggleMobileMenu = () => {
+    setIsOpen(!isOpen);
   };
 
-  const handleProjectsClick = () => {
-    const projectsSection = document.getElementById("project-section");
-    if (projectsSection) {
-      const offset = projectsSection.offsetTop - 50;
-      window.scrollTo({
-        top: offset,
-        behavior: "smooth"
-      });
-    }
-  };
-
-  const handleGithubClick = () => {
-    const githubSection = document.getElementById("github");
-    if (githubSection) {
-      const offset = githubSection.offsetTop - 50;
-      window.scrollTo({
-        top: offset,
-        behavior: "smooth"
-      });
-    }
-  };
-
-  const handleContactClick = () => {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      const offset = contactSection.offsetTop - 50;
-      window.scrollTo({
-        top: offset,
-        behavior: "smooth"
-      });
-    }
-  };
+  const navItems = [
+    { id: 'home', label: 'Home' },
+    { id: 'about', label: 'About' },
+    { id: 'skills1', label: 'Skills' },
+    { id: 'project-section', label: 'Projects' },
+    { id: 'github', label: 'GitHub' },
+    { id: 'contact', label: 'Contact' }
+  ];
 
   return (
-    <div className='nav-container'>
-      <div className='navbar'>
-        <h1 id="nav-menu" onClick={handleHomeClick}>KM</h1>
-        {isOpen ? <Menu>
-          <MenuButton
-            as={IconButton}
-            aria-label='Options'
-            icon={<GiHamburgerMenu style={{ width: "40px", height: "70%", border: "none" }} />}
-            sx={{ marginLeft: "250px", border: "none", backgroundColor: "transparent" }}
-          />
-          <MenuList sx={{ zIndex: "100", backgroundColor: "#A2A6FF", paddingTop: "5px" }}>
-            <MenuItem style={{ border: "none", color: "black", margin: "10px", backgroundColor: "transparent" }}>
-              <button style={{ cursor: 'pointer', border: "none", backgroundColor: "transparent", fontSize: "large", fontWeight: "bold" }} onClick={handleHomeClick}>Home</button>
-            </MenuItem>
-            <MenuItem style={{ border: "none", color: "black", margin: "10px", backgroundColor: "transparent" }}>
-              <button style={{ cursor: 'pointer', border: "none", backgroundColor: "transparent", fontSize: "large", fontWeight: "bold" }} onClick={handleAboutClick}>About</button>
-            </MenuItem>
-            <MenuItem style={{ border: "none", color: "black", margin: "10px", backgroundColor: "transparent" }}>
-              <button style={{ cursor: 'pointer', border: "none", backgroundColor: "transparent", fontSize: "large", fontWeight: "bold" }} onClick={handleSkillsClick}>Skills</button>
-            </MenuItem>
-            <MenuItem style={{ border: "none", color: "black", margin: "10px", backgroundColor: "transparent" }}>
-              <button style={{ cursor: 'pointer', border: "none", backgroundColor: "transparent", fontSize: "large", fontWeight: "bold" }} onClick={handleProjectsClick}>Projects</button>
-            </MenuItem>
-            <MenuItem style={{ border: "none", color: "black", margin: "10px", backgroundColor: "transparent" }}>
-              <button style={{ cursor: 'pointer', border: "none", backgroundColor: "transparent", fontSize: "large", fontWeight: "bold" }} onClick={handleGithubClick}>Github</button>
-            </MenuItem>
-            <MenuItem style={{ border: "none", color: "black", margin: "10px", backgroundColor: "transparent" }}>
-              <button style={{ cursor: 'pointer', border: "none", backgroundColor: "transparent", fontSize: "large", fontWeight: "bold" }} onClick={handleContactClick}>Contact</button>
-            </MenuItem>
-            <MenuItem style={{ border: "none", color: "black", marginLeft: "15px", paddingBottom: "10px", backgroundColor: "transparent" }} onClick={() => window.open("https://drive.google.com/file/d/1f-1o5e_4QVXGYl1XvfpCYNzQLMegZJed/view")} id="resume-button-1" >
-              <a href={resume} target="_blank" rel='noreferrer' className='nav-link resume' id="resume-link-1" download="Kinjal-Momaya-Resume" style={{ textDecoration: "none", color: "black", fontSize: "large", fontWeight: "bold" }}>Resume</a>
-            </MenuItem>
-          </MenuList>
-        </Menu> : null}
-        <div id="nav-menu-container" style={{ display: sizing ? 'none' : 'flex' }}>
-          <button className='nav-btn' style={{ cursor: 'pointer', border: "none" }} onClick={handleHomeClick}>Home</button>
-          <button className='nav-btn' style={{ cursor: 'pointer', border: "none" }} onClick={handleAboutClick}>About</button>
-          <button className='nav-btn' style={{ cursor: 'pointer', border: "none" }} onClick={handleSkillsClick}>Skills</button>
-          <button className='nav-btn' style={{ cursor: 'pointer', border: "none" }} onClick={handleProjectsClick}>Projects</button>
-          <button className='nav-btn' style={{ cursor: 'pointer', border: "none" }} onClick={handleGithubClick}>Github</button>
-          <button className='nav-btn' style={{ cursor: 'pointer', border: "none" }} onClick={handleContactClick}>Contact</button>
-          <button className='nav-btn resume' onClick={() => window.open("https://drive.google.com/file/d/1f-1o5e_4QVXGYl1XvfpCYNzQLMegZJed/view")} id="resume-button-1" > <a href={resume} target="_blank" className='nav-link resume' id="resume-link-1" download="Kinjal-Momaya-Resume.pdf" style={{ textDecoration: "none", color: "white" }}>Resume</a></button>
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+      <div className="nav-container">
+        {/* Logo */}
+        <div className="nav-logo" onClick={() => scrollToSection('home')}>
+          <span className="logo-text">KM</span>
+        </div>
+
+        {/* Desktop Navigation */}
+        <div className="nav-menu">
+          {navItems.map((item) => (
+            <button
+              key={item.id}
+              className="nav-link"
+              onClick={() => scrollToSection(item.id)}
+            >
+              {item.label}
+            </button>
+          ))}
+          <button className="nav-resume-btn" onClick={handleResumeClick}>
+            <FaDownload />
+            Resume
+          </button>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <div className="mobile-menu-btn" onClick={toggleMobileMenu}>
+          {isOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>
-    </div>
+
+      {/* Mobile Menu */}
+      <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
+        <div className="mobile-menu-content">
+          {navItems.map((item) => (
+            <button
+              key={item.id}
+              className="mobile-nav-link"
+              onClick={() => scrollToSection(item.id)}
+            >
+              {item.label}
+            </button>
+          ))}
+          <button className="mobile-resume-btn" onClick={handleResumeClick}>
+            <FaDownload />
+            Download Resume
+          </button>
+        </div>
+      </div>
+    </nav>
   )
 }
 
