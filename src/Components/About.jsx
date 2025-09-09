@@ -26,12 +26,12 @@ const About = () => {
                 alt="Kinjal Momaya - AI Engineer & Full Stack Developer"
                 className="profile-image"
               />
-              <div className="image-overlay">
+              {/* <div className="image-overlay">
                 <button className="btn btn-primary" onClick={handleResumeClick}>
                   <FaDownload />
                   Download Resume
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -39,7 +39,7 @@ const About = () => {
             <div className="about-intro">
               <h3>Hello! I'm Kinjal Momaya</h3>
               <p className="intro-text">
-                A passionate <strong>AI Engineer</strong> with <strong>1.9+ years</strong> of experience in 
+                A passionate <strong>AI Engineer</strong> with <strong>1.10+ years</strong> of experience in 
                 Full Stack Development, specializing in building intelligent applications that solve 
                 real-world problems.
               </p>
@@ -111,10 +111,10 @@ const About = () => {
                 <strong>Let's collaborate and bring your vision to life</strong> with cutting-edge AI 
                 technologies and thoughtful designs!
               </p>
-              <button className="btn btn-accent" onClick={handleResumeClick}>
+              {/* <button className="btn btn-accent" onClick={handleResumeClick}>
                 <FaDownload />
                 View My Resume
-              </button>
+              </button> */}
             </div>
         </div>
       </div>

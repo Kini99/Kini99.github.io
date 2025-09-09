@@ -102,12 +102,12 @@ const Contact = () => {
               ))}
             </div>
 
-            <div className="contact-actions">
+            {/* <div className="contact-actions">
               <button className="btn btn-primary" onClick={handleResumeClick}>
                 <FaDownload />
                 Download Resume
               </button>
-            </div>
+            </div> */}
 
             <div className="contact-status">
               <div className="status-indicator">

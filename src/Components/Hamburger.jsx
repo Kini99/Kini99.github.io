@@ -47,7 +47,7 @@ const Hamburger = () => {
             Contact
           </Link>
         </button>
-        <button className="nav-btn">
+        {/* <button className="nav-btn">
           <a
             href="https://drive.google.com/file/d/12gX-ZogqQlPiFpqgnK5mRVtjErLz0tIp/view?usp=drive_link"
             target="_blank"
@@ -57,7 +57,7 @@ const Hamburger = () => {
           >
             Resume
           </a>
-        </button>
+        </button> */}
       </Drawer>
       <IconButton
         sx={{ color: "white", marginLeft: "auto" }}

@@ -76,10 +76,10 @@ const Navbar = () => {
               {item.label}
             </button>
           ))}
-          <button className="nav-resume-btn" onClick={handleResumeClick}>
+          {/* <button className="nav-resume-btn" onClick={handleResumeClick}>
             <FaDownload />
             Resume
-          </button>
+          </button> */}
         </div>
 
         {/* Mobile Menu Button */}
@@ -100,10 +100,10 @@ const Navbar = () => {
               {item.label}
             </button>
           ))}
-          <button className="mobile-resume-btn" onClick={handleResumeClick}>
+          {/* <button className="mobile-resume-btn" onClick={handleResumeClick}>
             <FaDownload />
             Download Resume
-          </button>
+          </button> */}
         </div>
       </div>
     </nav>

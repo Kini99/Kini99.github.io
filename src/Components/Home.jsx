@@ -93,10 +93,10 @@ const Home = () => {
               <button className="btn btn-secondary" onClick={handleKnowMoreClick}>
                 Learn More
               </button>
-              <button className="btn btn-accent" onClick={handleResumeClick}>
+              {/* <button className="btn btn-accent" onClick={handleResumeClick}>
                 <FaDownload />
                 Download Resume
-              </button>
+              </button> */}
             </div>
             
             <div className="social-links">
