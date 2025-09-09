@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6bc6eddb.css",
-    "main.js": "/static/js/main.699a0cb5.js",
+    "main.js": "/static/js/main.c6d72628.js",
     "static/js/787.f8cd1a75.chunk.js": "/static/js/787.f8cd1a75.chunk.js",
     "static/media/HomeSweeter.png": "/static/media/HomeSweeter.a79ccc15d09592607014.png",
     "static/media/Workflow.png": "/static/media/Workflow.fa635a7331e00fa279ec.png",
@@ -11,11 +11,11 @@
     "static/media/Kinjal-Momaya-Resume.pdf": "/static/media/Kinjal-Momaya-Resume.3128b3595d7bb700d1df.pdf",
     "index.html": "/index.html",
     "main.6bc6eddb.css.map": "/static/css/main.6bc6eddb.css.map",
-    "main.699a0cb5.js.map": "/static/js/main.699a0cb5.js.map",
+    "main.c6d72628.js.map": "/static/js/main.c6d72628.js.map",
     "787.f8cd1a75.chunk.js.map": "/static/js/787.f8cd1a75.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6bc6eddb.css",
-    "static/js/main.699a0cb5.js"
+    "static/js/main.c6d72628.js"
   ]
 }
